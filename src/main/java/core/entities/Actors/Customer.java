@@ -18,7 +18,7 @@ import core.entities._Order;
 public class Customer extends User{
 
 	@ElementCollection
-	@CollectionTable(name="Customer_Cart", joinColumns = @JoinColumn(name="user_id"))
+	@CollectionTable(joinColumns = @JoinColumn(name="user_id"))
 	private List<Item> cart = new ArrayList<Item>();
 	// Need to use List, as ArrayList can't be directly used with the above annotation.
 	
@@ -27,7 +27,6 @@ public class Customer extends User{
 	
 	public Customer() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 	
 	public Customer(ArrayList<Item> cart, ArrayList<_Order> orders) {

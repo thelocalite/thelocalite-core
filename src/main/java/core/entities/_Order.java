@@ -31,8 +31,6 @@ public class _Order {
 	
 	private double rating;
 	
-//	private long merchantId;
-	
 	@ManyToOne(cascade=CascadeType.ALL)
 	@JoinColumn(name="merchantId")
 	private Merchant merchant;
@@ -42,14 +40,11 @@ public class _Order {
 	private Customer customer;
 	
 	
-//	private long customerId;
-	
 	private LocalDateTime timestamp;
 	
 	// Useless crap beneath
 	
 	public _Order() {
-		// TODO Auto-generated constructor stub
 	}
 
 	public _Order(String status, List<Item> items, double rating, Merchant merchant, Customer customer,
@@ -71,27 +66,6 @@ public class _Order {
 	public void setRating(double rating) {
 		this.rating = rating;
 	}
-
-
-//	public long getMerchantId() {
-//		return merchantId;
-//	}
-//
-//
-//	public void setMerchantId(long merchantId) {
-//		this.merchantId = merchantId;
-//	}
-//
-//
-//	public long getCustomerId() {
-//		return customerId;
-//	}
-//
-//
-//	public void setCustomerId(long customerId) {
-//		this.customerId = customerId;
-//	}
-
 
 	public LocalDateTime getTimestamp() {
 		return timestamp;

@@ -36,7 +36,6 @@ public class Merchant extends User{
 	
 	public Merchant() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 

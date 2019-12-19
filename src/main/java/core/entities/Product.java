@@ -23,7 +23,6 @@ public class Product {
 	private String category;
 	
 	public Product() {
-		// TODO Auto-generated constructor stub
 	}
 
 	public Product(String name, int quantityInStock, String imageUrl, String description, String category) {

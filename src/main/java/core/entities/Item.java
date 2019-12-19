@@ -10,7 +10,6 @@ class Item{
 	
 	
 	public Item() {
-		// TODO Auto-generated constructor stub
 	}
 	public long getProductId() {
 		return productId;

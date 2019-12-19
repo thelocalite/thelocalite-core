@@ -11,7 +11,6 @@ public class ServicePerson extends User{
 	
 	public ServicePerson() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	public ServicePerson(String serviceType, Double averageRating) {
