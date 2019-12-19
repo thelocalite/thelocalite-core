@@ -14,9 +14,7 @@ public class Product {
 	
 	private String name;
 	
-	private Double price;
-	
-	private boolean inStock;
+	private int quantityInStock;
 	
 	private String imageUrl;
 	
@@ -28,11 +26,10 @@ public class Product {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Product(String name, Double price, boolean inStock, String imageUrl, String description, String category) {
+	public Product(String name, int quantityInStock, String imageUrl, String description, String category) {
 		super();
 		this.name = name;
-		this.price = price;
-		this.inStock = inStock;
+		this.quantityInStock = quantityInStock;
 		this.imageUrl = imageUrl;
 		this.description = description;
 		this.category = category;
@@ -54,20 +51,12 @@ public class Product {
 		this.name = name;
 	}
 
-	public Double getPrice() {
-		return price;
+	public int isInStock() {
+		return quantityInStock;
 	}
 
-	public void setPrice(Double price) {
-		this.price = price;
-	}
-
-	public boolean isInStock() {
-		return inStock;
-	}
-
-	public void setInStock(boolean inStock) {
-		this.inStock = inStock;
+	public void setInStock(int inStock) {
+		this.quantityInStock = inStock;
 	}
 
 	public String getImageUrl() {
@@ -94,7 +83,6 @@ public class Product {
 		this.category = category;
 	}
 	
-	
-	
+		
 
 }

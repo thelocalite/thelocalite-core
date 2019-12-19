@@ -1,11 +1,9 @@
 package core.entities;
-import javax.persistence.Column;
 import javax.persistence.Embeddable;
 
 @Embeddable
 class Item{
 	
-	@Column(name = "prouct_id")
 	private long productId;
 	private Double price;
 	private Integer quantity;
