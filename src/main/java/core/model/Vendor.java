@@ -1,13 +1,13 @@
 package core.model;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
 
 @Entity
 public class Vendor {
@@ -23,8 +23,10 @@ public class Vendor {
 	private String phoneNumber;
 	private String vendorCategory;
 	
-	@ManyToMany(mappedBy = "vendors")
-	private List<Product> products = new ArrayList<>();
+	
+	@OneToMany(mappedBy = "vendor")
+    private Set<ProductVendor> productVendors = new HashSet<>();
+	
 	
 	public Vendor() {
 	}
@@ -38,7 +40,7 @@ public class Vendor {
 		return vendorId;
 	}
 
-	public void setId(Long vendorId) {
+	public void setVendorId(Long vendorId) {
 		this.vendorId = vendorId;
 	}
 
@@ -90,24 +92,15 @@ public class Vendor {
 		this.vendorCategory = vendorCategory;
 	}
 
-	public List<Product> getProducts() {
-		return products;
+	public Set<ProductVendor> getProductVendors() {
+		return productVendors;
 	}
 
-	public void setProducts(List<Product> products) {
-		this.products = products;
+	public void setProductVendors(Set<ProductVendor> productVendors) {
+		this.productVendors = productVendors;
 	}
+
 	
-	// Helper
 	
-	public void addProduct(Product product) {
-		this.products.add(product);
-		product.getVendors().add(this);
-	}
-	
-	public void removeProduct(Product product) {
-		this.products.add(product);
-		product.getVendors().remove(this);
-	}
 
 }

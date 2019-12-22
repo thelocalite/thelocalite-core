@@ -1,34 +1,31 @@
 package core.model;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.JoinTable;
-import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
+
 
 @Entity
 public class Product {
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private Long productId;
+	private Long id;
 	
 	private String name;
 	private String description;
 	private String imgUrl;
 	
-	@ManyToMany
-	@JoinTable(name="Product_Vendor", 
-		joinColumns= {@JoinColumn(name="productId")},
-		inverseJoinColumns = {@JoinColumn(name="vendorId")})
-	private List<Vendor> vendors = new ArrayList<>();
+
+	@OneToMany(mappedBy = "product")
+    private Set<ProductVendor> productVendors = new HashSet<>();
 	
-	
+	// BS Beneath
 	public Product() {
 		// TODO Auto-generated constructor stub
 	}
@@ -40,13 +37,13 @@ public class Product {
 	}
 
 
-	public Long getProductId() {
-		return productId;
+	public Long getId() {
+		return id;
 	}
 
 
-	public void setId(Long productId) {
-		this.productId = productId;
+	public void setId(Long id) {
+		this.id = id;
 	}
 
 
@@ -80,13 +77,16 @@ public class Product {
 	}
 
 
-	public List<Vendor> getVendors() {
-		return vendors;
+	public Set<ProductVendor> getProductVendors() {
+		return productVendors;
 	}
 
 
-	public void setVendors(List<Vendor> vendors) {
-		this.vendors = vendors;
+	public void setProductVendors(Set<ProductVendor> productVendors) {
+		this.productVendors = productVendors;
 	}
 	
+	
+
+
 }
