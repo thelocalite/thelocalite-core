@@ -1,4 +1,4 @@
-package core.entities.Actors;
+package commons.entities;
 
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;

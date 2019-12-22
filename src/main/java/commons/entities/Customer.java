@@ -1,4 +1,4 @@
-package core.entities.Actors;
+package commons.entities;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,8 +11,6 @@ import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 
 import org.hibernate.cache.spi.support.AbstractReadWriteAccess.Item;
-
-import core.entities._Order;
 
 @Entity
 public class Customer extends User{

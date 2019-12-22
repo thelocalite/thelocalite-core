@@ -1,4 +1,4 @@
-package core.entities;
+package commons.entities;
 import javax.persistence.Embeddable;
 
 @Embeddable

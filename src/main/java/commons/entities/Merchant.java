@@ -1,4 +1,4 @@
-package core.entities.Actors;
+package commons.entities;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,12 +7,9 @@ import javax.persistence.CascadeType;
 import javax.persistence.CollectionTable;
 import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
-import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 
 import org.hibernate.cache.spi.support.AbstractReadWriteAccess.Item;
-
-import core.entities._Order;
 
 @Entity
 public class Merchant extends User{
@@ -21,8 +18,8 @@ public class Merchant extends User{
 	private List<_Order> orders;
 	
 	@ElementCollection
-	@CollectionTable(name="Merchant_Stock", joinColumns = @JoinColumn(name="user_id"))
-	private List<Item> stock = new ArrayList<Item>();
+	@CollectionTable
+	private List<Item> stock;
 	// Need to use List, as ArrayList can't be directly used with the above annotation.
 	
 	private long gstNumber;
