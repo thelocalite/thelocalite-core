@@ -1,4 +1,4 @@
-package core.services;
+package core.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -30,7 +30,7 @@ public class TestService {
 		Vendor vendor1 = new Vendor("Vendor 1");
 		vendorRepo.save(vendor1);
 			
-		ProductVendor productVendor = new ProductVendor(product1, vendor1);
+		ProductVendor productVendor = new ProductVendor(product1, vendor1, 22d, 11d);
 		
 		product1.getProductVendors().add(productVendor);
 		vendor1.getProductVendors().add(productVendor);

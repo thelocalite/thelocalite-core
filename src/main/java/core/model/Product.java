@@ -25,18 +25,19 @@ public class Product {
 	@OneToMany(mappedBy = "product")
     private Set<ProductVendor> productVendors = new HashSet<>();
 	
-	// BS Beneath
+	// Default constructor
 	public Product() {
 		// TODO Auto-generated constructor stub
 	}
 
-
+	// Parameterised constructor
 	public Product(String name) {
 		super();
 		this.name = name;
 	}
 
 
+	// Getters & Setters
 	public Long getId() {
 		return id;
 	}
@@ -87,6 +88,4 @@ public class Product {
 	}
 	
 	
-
-
 }

@@ -1,8 +1,8 @@
 package core.model;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -10,11 +10,11 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
 @Entity
-public class Vendor {
+public class Customer {
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private Long vendorId;
+	private Long id;
 	
 	private String firstName;
 	private String lastName;
@@ -24,29 +24,28 @@ public class Vendor {
 	private String imageUrl;
 	private String address;
 	private String phoneNumber;
-	private String vendorCategory;
 	
-//	@OneToMany(mappedBy="vendor", cascade = CascadeType.ALL)
-//	private List<_Order> orders;
+	@OneToMany(mappedBy="customer", cascade = CascadeType.ALL)
+	private List<_Order> orders;
 	
-	
-	@OneToMany(mappedBy = "vendor")
-    private Set<ProductVendor> productVendors = new HashSet<>();
 	
 	// Default Constructor
-	public Vendor() {
+	public Customer() {
+		// TODO Auto-generated constructor stub
 	}
-	
+
 	// Parameterised Constructor
-	public Vendor(String firstName) {
+	public Customer(String firstName) {
 		super();
 		this.firstName = firstName;
 	}
 
 	// Getters & Setters
 	
-	public Long getVendorId() {
-		return vendorId;
+	
+	
+	public Long getId() {
+		return id;
 	}
 
 	public String getPassword() {
@@ -73,8 +72,16 @@ public class Vendor {
 		this.imageUrl = imageUrl;
 	}
 
-	public void setVendorId(Long vendorId) {
-		this.vendorId = vendorId;
+	public List<_Order> getOrders() {
+		return orders;
+	}
+
+	public void setOrders(List<_Order> orders) {
+		this.orders = orders;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
 	}
 
 	public String getFirstName() {
@@ -116,22 +123,6 @@ public class Vendor {
 	public void setPhoneNumber(String phoneNumber) {
 		this.phoneNumber = phoneNumber;
 	}
-
-	public String getVendorCategory() {
-		return vendorCategory;
-	}
-
-	public void setVendorCategory(String vendorCategory) {
-		this.vendorCategory = vendorCategory;
-	}
-
-	public Set<ProductVendor> getProductVendors() {
-		return productVendors;
-	}
-
-	public void setProductVendors(Set<ProductVendor> productVendors) {
-		this.productVendors = productVendors;
-	}
-
-
+	
+	
 }

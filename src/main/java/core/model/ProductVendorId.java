@@ -7,10 +7,7 @@ import javax.persistence.Embeddable;
 
 @Embeddable
 public class ProductVendorId implements Serializable{
-	
-	/**
-	 * 
-	 */
+
 	private static final long serialVersionUID = 1L;
 	
 	private Long productId;
@@ -19,16 +16,12 @@ public class ProductVendorId implements Serializable{
 	public ProductVendorId() {
 		// TODO Auto-generated constructor stub
 	}
-	
-	
 
 	public ProductVendorId(Long productId, Long vendorId) {
 		super();
 		this.productId = productId;
 		this.vendorId = vendorId;
 	}
-
-
 
 	public Long getProductId() {
 		return productId;
@@ -50,7 +43,7 @@ public class ProductVendorId implements Serializable{
 		return serialVersionUID;
 	}
 	
-	
+	// TODO Understand WTF this is.
 	@Override
     public int hashCode() {
         final int prime = 31;
@@ -61,7 +54,8 @@ public class ProductVendorId implements Serializable{
                 + ((vendorId == null) ? 0 : vendorId.hashCode());
         return result;
     }
- 
+
+	// TODO Understand WTF this is.
     @Override
     public boolean equals(Object obj) {
         if (this == obj)
