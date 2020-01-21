@@ -14,9 +14,9 @@ public class ProductService {
 	@Autowired
 	private ProductRepository productRepo;
 
-	// Get product list
-	public List<Product> getAllProducts() {
-		return productRepo.getAllProducts();
+	// Get product list by using repository function
+	public Iterable<Product> getAllProducts() {
+		return productRepo.findAll();
 	}
 
 	// Add new product

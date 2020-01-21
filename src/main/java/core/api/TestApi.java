@@ -35,7 +35,7 @@ public class TestApi {
 
 	// Test API to get all product entities as JSON
 	@GetMapping(path = "/products")
-	public @ResponseBody List<Product> getAllProducts() {
+	public @ResponseBody Iterable<Product> getAllProducts() {
 		return productService.getAllProducts();
 	}
 

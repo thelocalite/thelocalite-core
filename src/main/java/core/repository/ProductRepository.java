@@ -15,10 +15,6 @@ public interface ProductRepository extends CrudRepository<Product, Long> {
 	@Query(value = "SELECT * FROM product p WHERE p.name = :prodName", nativeQuery = true)
 	public List<Product> getProductsByName(@Param("prodName") String prodName);
 
-	// Query to get all products
-	@Query(value = "SELECT * FROM product p", nativeQuery = true)
-	public List<Product> getAllProducts();
-
 }
 
 /*
