@@ -1,6 +1,7 @@
 package core.service;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -14,9 +15,14 @@ public class ProductService {
 	@Autowired
 	private ProductRepository productRepo;
 
-	// Get product list by using repository function
+	// Gets product list by using repository function
 	public Iterable<Product> getAllProducts() {
 		return productRepo.findAll();
+	}
+
+	// Gets Product by Id using repository function
+	public Optional<Product> getProduct(long id) {
+		return productRepo.findById(id);
 	}
 
 	// Add new product

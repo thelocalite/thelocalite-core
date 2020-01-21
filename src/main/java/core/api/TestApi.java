@@ -1,6 +1,7 @@
 package core.api;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -33,10 +34,20 @@ public class TestApi {
 		productService.deleteProductByName(productName);
 	}
 
-	// Test API to get all product entities as JSON
+	// Gets all product entities as JSON
 	@GetMapping(path = "/products")
 	public @ResponseBody Iterable<Product> getAllProducts() {
 		return productService.getAllProducts();
+	}
+
+	// Gets product by id
+	@GetMapping(path = "/product/{id}")
+	public @ResponseBody Product getProduct(@PathVariable("id") Long id) {
+		Optional<Product> product = productService.getProduct(id);
+		if (product.isPresent())
+			return product.get();
+		else
+			return null;
 	}
 
 }
