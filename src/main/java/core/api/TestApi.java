@@ -4,11 +4,7 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import core.model.Product;
 import core.service.ProductService;
@@ -32,6 +28,20 @@ public class TestApi {
 	@RequestMapping("deleteProduct/{productName}")
 	public void deleteProduct(@PathVariable("productName") String productName) {
 		productService.deleteProductByName(productName);
+	}
+
+	// Add product using POST parameters from Angular
+	@PostMapping(path = "/products/add")
+	public @ResponseBody String addNewProduct(@RequestParam String productName, @RequestParam String productDescription,
+			@RequestParam String productCategory, @RequestParam Double productMrp,
+			@RequestParam String productImageUrl) {
+		Product product = new Product();
+		product.setProductName(productName);
+		product.setProductDescription(productDescription);
+		product.setProductCategory(productCategory);
+		product.setProductMrp(productMrp);
+		product.setProductImageUrl(productImageUrl);
+		return "Added new Product";
 	}
 
 	// Gets all product entities as JSON
