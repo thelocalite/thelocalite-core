@@ -1,4 +1,4 @@
-package core.model;
+package core.model_backup;
 
 import java.util.List;
 
@@ -11,11 +11,11 @@ import javax.persistence.OneToMany;
 
 @Entity
 public class Customer {
-	
+
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	
+
 	private String firstName;
 	private String lastName;
 	private String email;
@@ -24,11 +24,10 @@ public class Customer {
 	private String imageUrl;
 	private String address;
 	private String phoneNumber;
-	
-	@OneToMany(mappedBy="customer", cascade = CascadeType.ALL)
+
+	@OneToMany(mappedBy = "customer", cascade = CascadeType.ALL)
 	private List<_Order> orders;
-	
-	
+
 	// Default Constructor
 	public Customer() {
 		// TODO Auto-generated constructor stub
@@ -41,9 +40,7 @@ public class Customer {
 	}
 
 	// Getters & Setters
-	
-	
-	
+
 	public Long getId() {
 		return id;
 	}
@@ -123,6 +120,5 @@ public class Customer {
 	public void setPhoneNumber(String phoneNumber) {
 		this.phoneNumber = phoneNumber;
 	}
-	
-	
+
 }

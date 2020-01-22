@@ -1,4 +1,4 @@
-package core.model;
+package core.model_backup;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
@@ -9,80 +9,71 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 
-
 @Entity
 public class _Order {
-	
+
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	
+
 	private Long orderGroupId;
-	
+
 	private Double rating;
-	
-	@ManyToOne(cascade=CascadeType.ALL)
-	@JoinColumn(name="order_id")
+
+	@ManyToOne(cascade = CascadeType.ALL)
+	@JoinColumn(name = "order_id")
 	private Customer customer;
-	
-//	@ManyToOne(cascade=CascadeType.ALL)
-//	@JoinColumn(name="vendor_id")
-//	private Vendor vendor;
-	
+
+	// @ManyToOne(cascade=CascadeType.ALL)
+	// @JoinColumn(name="vendor_id")
+	// private Vendor vendor;
+
 	@OneToOne
 	private ProductVendor productVendor;
-	
+
 	private Integer quantity;
-	
+
 	@OneToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name = "order_detail_id")
 	private OrderDetail orderDetail;
-	
+
 	public _Order() {
 		// TODO Auto-generated constructor stub
 	}
-	
 
 	// Getters & Setters
 	public OrderDetail getOrderDetail() {
 		return orderDetail;
 	}
-	
+
 	public Double getRating() {
 		return rating;
 	}
-
 
 	public void setRating(Double rating) {
 		this.rating = rating;
 	}
 
-
 	public Long getOrderGroupId() {
 		return orderGroupId;
 	}
-
 
 	public void setOrderGroupId(Long orderGroupId) {
 		this.orderGroupId = orderGroupId;
 	}
 
-
-//	public Vendor getVendor() {
-//		return vendor;
-//	}
-//
-//
-//	public void setVendor(Vendor vendor) {
-//		this.vendor = vendor;
-//	}
-
+	// public Vendor getVendor() {
+	// return vendor;
+	// }
+	//
+	//
+	// public void setVendor(Vendor vendor) {
+	// this.vendor = vendor;
+	// }
 
 	public void setOrderDetail(OrderDetail orderDetail) {
 		this.orderDetail = orderDetail;
 	}
-
-
 
 	public Long getId() {
 		return id;
@@ -115,7 +106,5 @@ public class _Order {
 	public void setQuantity(Integer quantity) {
 		this.quantity = quantity;
 	}
-	
-	
-	
+
 }

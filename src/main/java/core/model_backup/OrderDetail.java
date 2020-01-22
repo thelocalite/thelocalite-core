@@ -1,4 +1,4 @@
-package core.model;
+package core.model_backup;
 
 import java.time.LocalDateTime;
 
@@ -11,23 +11,23 @@ import javax.persistence.OneToOne;
 
 @Entity
 public class OrderDetail {
-	
+
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	
+
 	@OneToOne
 	private _Order Order;
-	
+
 	private String CurrentStatus;
 	private LocalDateTime TimePlaced;
 	private LocalDateTime TimeAccepted;
 	private LocalDateTime TimeOutForDelivery;
 	private LocalDateTime Delivered;
-	
+
 	@OneToOne(mappedBy = "orderDetail", cascade = CascadeType.ALL)
 	private _Order order;
-	
+
 	public OrderDetail() {
 		// TODO Auto-generated constructor stub
 	}
@@ -87,7 +87,5 @@ public class OrderDetail {
 	public void setDelivered(LocalDateTime delivered) {
 		Delivered = delivered;
 	}
-	
-	
 
 }

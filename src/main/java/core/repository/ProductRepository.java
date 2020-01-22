@@ -12,7 +12,7 @@ import core.model.Product;
 @Repository
 public interface ProductRepository extends CrudRepository<Product, Long> {
 
-	@Query(value = "SELECT * FROM product p WHERE p.name = :prodName", nativeQuery = true)
+	@Query(value = "SELECT * FROM product p WHERE p.product_name = :prodName", nativeQuery = true)
 	public List<Product> getProductsByName(@Param("prodName") String prodName);
 
 }

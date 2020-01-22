@@ -1,4 +1,4 @@
-package core.model;
+package core.model_backup;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -9,11 +9,11 @@ import javax.persistence.ManyToOne;
 
 @Entity
 public class ServicePerson {
-	
+
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long servicePersonId;
-	
+
 	private String firstName;
 	private String lastName;
 	private String email;
@@ -22,18 +22,17 @@ public class ServicePerson {
 	private String imageUrl;
 	private String address;
 	private String phoneNumber;
-	
+
 	private Double rating;
-	
+
 	@ManyToOne
-	@JoinColumn(name="service_id")
+	@JoinColumn(name = "service_id")
 	private Service service;
-	
-	
+
 	// Default Constructor
 	public ServicePerson() {
 	}
-	
+
 	// Getters & Setters
 	public Long getServicePersonId() {
 		return servicePersonId;
@@ -122,6 +121,5 @@ public class ServicePerson {
 	public void setPhoneNumber(String phoneNumber) {
 		this.phoneNumber = phoneNumber;
 	}
-	
 
 }

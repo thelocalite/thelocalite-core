@@ -1,91 +1,51 @@
 package core.model;
 
-import java.util.HashSet;
 import java.util.Set;
+import java.util.stream.*;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
+import lombok.*;
 
+@Data
+@NoArgsConstructor
 
 @Entity
 public class Product {
-	
+
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private Long id;
-	
-	private String name;
-	private String description;
-	private String imgUrl;
-	
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long productId;
 
-	@OneToMany(mappedBy = "product")
-    private Set<ProductVendor> productVendors = new HashSet<>();
-	
-	// Default constructor
-	public Product() {
-		// TODO Auto-generated constructor stub
+	private String productName;
+
+	private String productCategory;
+
+	private String productDescription;
+
+	// Default Maximun Retail Price printed on the product
+	private Double productMrp;
+
+	private String productImageUrl;
+
+	/**
+	 * Product has many vendors and vendors have many products In order to map this
+	 * relationship, we create a new entity between them to which both have a one to
+	 * many relationship This new entity also has additional details that are unique
+	 * to the combination of product and vendor like discounted pricing
+	 */
+
+	@OneToMany(mappedBy = "product", cascade = CascadeType.ALL)
+	private Set<ProductVendor> productVendors;
+
+	public Product(String name, ProductVendor... productVendors) {
+		this.productName = name;
+		for (ProductVendor productVendor : productVendors)
+			productVendor.setProduct(this);
+		this.productVendors = Stream.of(productVendors).collect(Collectors.toSet());
 	}
 
-	// Parameterised constructor
 	public Product(String name) {
-		super();
-		this.name = name;
+		this.productName = name;
 	}
 
-
-	// Getters & Setters
-	public Long getId() {
-		return id;
-	}
-
-
-	public void setId(Long id) {
-		this.id = id;
-	}
-
-
-	public String getName() {
-		return name;
-	}
-
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-
-	public String getDescription() {
-		return description;
-	}
-
-
-	public void setDescription(String description) {
-		this.description = description;
-	}
-
-
-	public String getImgUrl() {
-		return imgUrl;
-	}
-
-
-	public void setImgUrl(String imgUrl) {
-		this.imgUrl = imgUrl;
-	}
-
-
-	public Set<ProductVendor> getProductVendors() {
-		return productVendors;
-	}
-
-
-	public void setProductVendors(Set<ProductVendor> productVendors) {
-		this.productVendors = productVendors;
-	}
-	
-	
 }

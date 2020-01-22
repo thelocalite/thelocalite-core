@@ -1,95 +1,50 @@
-/*
- * Notes
- * @vatadepalli: Please read the below resource carefully
- * 				 https://hellokoding.com/jpa-many-to-many-extra-columns-relationship-mapping-example-with-spring-boot-maven-and-mysql/
- * */
 package core.model;
 
-import javax.persistence.EmbeddedId;
-import javax.persistence.Entity;
-import javax.persistence.ManyToOne;
-import javax.persistence.MapsId;
+import java.io.Serializable;
+
+import javax.persistence.*;
+import lombok.*;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@ToString
+@EqualsAndHashCode
 
 @Entity
-public class ProductVendor{
-	
-	@EmbeddedId
-	private ProductVendorId id = new ProductVendorId();
-	
-	@ManyToOne
-    @MapsId("productId")
-	private Product product;
-	
-	@ManyToOne
-    @MapsId("vendorId")
-	private Vendor vendor;
-	
-	// Additional Fields
-	private Double price;
-	private Double discount;
-	private Integer quantityInStock;
-	
-	
-	public ProductVendor() {
-		// TODO Auto-generated constructor stub
-	}
+public class ProductVendor implements Serializable {
 
-	public ProductVendor(Product product, Vendor vendor, Double price, Double discount) {
-		super();
-		this.product = product;
-		this.vendor = vendor;
-		this.price = price;
-		this.discount = discount;
-	}
+    /**
+     * Default SerialVersionUID
+     */
+    private static final long serialVersionUID = 1L;
 
-	// Getters & Setters
-	
-	public ProductVendorId getId() {
-		return id;
-	}
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long productVendorId;
 
-	public Integer getQuantityInStock() {
-		return quantityInStock;
-	}
+    @ManyToOne
+    @JoinColumn
+    private Product product;
 
-	public void setQuantityInStock(Integer quantityInStock) {
-		this.quantityInStock = quantityInStock;
-	}
+    @ManyToOne
+    @JoinColumn
+    private Vendor vendor;
 
-	public void setId(ProductVendorId id) {
-		this.id = id;
-	}
+    // vendor specific price for products
+    private Double vendorSpecificPrice;
 
-	public Product getProduct() {
-		return product;
-	}
+    // If no price is specified, set price as the MRP
+    public ProductVendor(Product product, Vendor vendor) {
+        this.product = product;
+        this.vendor = vendor;
+        this.vendorSpecificPrice = product.getProductMrp();
+    }
 
-	public void setProduct(Product product) {
-		this.product = product;
-	}
-
-	public Vendor getVendor() {
-		return vendor;
-	}
-
-	public void setVendor(Vendor vendor) {
-		this.vendor = vendor;
-	}
-
-	public Double getPrice() {
-		return price;
-	}
-
-	public void setPrice(Double price) {
-		this.price = price;
-	}
-
-	public Double getDiscount() {
-		return discount;
-	}
-
-	public void setDiscount(Double discount) {
-		this.discount = discount;
-	}
-	
+    // If price is specified, set the price as the vendor price
+    public ProductVendor(Product product, Vendor vendor, Double price) {
+        this.product = product;
+        this.vendor = vendor;
+        this.vendorSpecificPrice = price;
+    }
 }
