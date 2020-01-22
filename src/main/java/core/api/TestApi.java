@@ -10,6 +10,10 @@ import core.model.Product;
 import core.service.ProductService;
 import core.service.TestService;
 
+// Enable Cross-Origin Resource Sharing for GET request
+// https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
+@CrossOrigin
+
 @RestController
 @RequestMapping("/")
 public class TestApi {
@@ -32,18 +36,16 @@ public class TestApi {
 
 	// Add product using POST parameters from Angular
 	@PostMapping(path = "/product/add")
-	public @ResponseBody String addNewProduct(@RequestParam String productName, @RequestParam String productDescription,
-			@RequestParam String productCategory, @RequestParam Double productMrp, @RequestParam String productImageUrl,
-			@RequestParam String productBrand) {
-		Product product = new Product();
-		product.setProductName(productName);
-		product.setProductDescription(productDescription);
-		product.setProductCategory(productCategory);
-		product.setProductMrp(productMrp);
-		product.setProductImageUrl(productImageUrl);
-		product.setProductBrand(productBrand);
-		productService.addProduct(product);
-		return "Added new Product";
+	public @ResponseBody String addNewProduct(@RequestBody Product product) {
+		Product product1 = new Product();
+		product1.setProductName(product.getProductName());
+		product1.setProductDescription(product.getProductDescription());
+		product1.setProductCategory(product.getProductCategory());
+		product1.setProductMrp(product.getProductMrp());
+		product1.setProductImageUrl(product.getProductImageUrl());
+		product1.setProductBrand(product.getProductBrand());
+		productService.addProduct(product1);
+		return "{\"message\":\"Added new Product\"}";
 	}
 
 	// Gets all product entities as JSON
