@@ -31,7 +31,7 @@ public class TestApi {
 	}
 
 	// Add product using POST parameters from Angular
-	@PostMapping(path = "/products/add")
+	@PostMapping(path = "/product/add")
 	public @ResponseBody String addNewProduct(@RequestParam String productName, @RequestParam String productDescription,
 			@RequestParam String productCategory, @RequestParam Double productMrp, @RequestParam String productImageUrl,
 			@RequestParam String productBrand) {
@@ -42,11 +42,12 @@ public class TestApi {
 		product.setProductMrp(productMrp);
 		product.setProductImageUrl(productImageUrl);
 		product.setProductBrand(productBrand);
+		productService.addProduct(product);
 		return "Added new Product";
 	}
 
 	// Gets all product entities as JSON
-	@GetMapping(path = "/products")
+	@GetMapping(path = "/product")
 	public @ResponseBody Iterable<Product> getAllProducts() {
 		return productService.getAllProducts();
 	}
