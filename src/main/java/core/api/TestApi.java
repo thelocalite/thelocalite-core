@@ -33,14 +33,15 @@ public class TestApi {
 	// Add product using POST parameters from Angular
 	@PostMapping(path = "/products/add")
 	public @ResponseBody String addNewProduct(@RequestParam String productName, @RequestParam String productDescription,
-			@RequestParam String productCategory, @RequestParam Double productMrp,
-			@RequestParam String productImageUrl) {
+			@RequestParam String productCategory, @RequestParam Double productMrp, @RequestParam String productImageUrl,
+			@RequestParam String productBrand) {
 		Product product = new Product();
 		product.setProductName(productName);
 		product.setProductDescription(productDescription);
 		product.setProductCategory(productCategory);
 		product.setProductMrp(productMrp);
 		product.setProductImageUrl(productImageUrl);
+		product.setProductBrand(productBrand);
 		return "Added new Product";
 	}
 

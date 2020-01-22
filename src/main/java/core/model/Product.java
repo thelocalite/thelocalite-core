@@ -32,6 +32,8 @@ public class Product {
 
 	private String productImageUrl;
 
+	private String productBrand;
+
 	/**
 	 * Product has many vendors and vendors have many products In order to map this
 	 * relationship, we create a new entity between them to which both have a one to
