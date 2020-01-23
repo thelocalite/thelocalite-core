@@ -1,0 +1,23 @@
+sudo: required
+language: java
+jdk: oraclejdk8
+
+services:
+  - docker
+
+script:
+  - ./mvnw clean install
+  - docker build -t vatadepalli/deployImg -f Dockerfile .
+
+deploy:
+  provider: elasticbeanstalk
+  region: "us-east-1"
+  app: "thelocalite-core"
+  env: "core-api-env"
+  bucket_name: "thelocalite-core"
+  on:
+    branch: master
+  access_key_id:
+    secure: $AWS_ACCESS_KEY
+  secret_access_key:
+    secure: $AWS_SECRET_KEY

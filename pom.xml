@@ -17,11 +17,6 @@
 
 	<properties>
 		<java.version>1.8</java.version>
-		<maven.build.timestamp.format>yyyyMMddHHmmss</maven.build.timestamp.format>
-		<beanstalk.versionLabel>${maven.build.timestamp}</beanstalk.versionLabel>
-		<beanstalk.applicationName>thelocalite-core</beanstalk.applicationName>
-		<beanstalker.region>eu-east-1</beanstalker.region>
-		<beanstalk.cnamePrefix>thelocalite-core</beanstalk.cnamePrefix>
 	</properties>
 
 	<dependencies>
@@ -62,6 +57,12 @@
 			<version>1.18.10</version>
 			<scope>provided</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<version>5.1.9.RELEASE</version>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -75,15 +76,8 @@
 				<groupId>br.com.ingenieux</groupId>
 				<artifactId>beanstalk-maven-plugin</artifactId>
 				<version>1.5.0</version>
-				<configuration>
-					<s3Bucket>thelocalite-core</s3Bucket>
-					<s3Key>${project.artifactId}/${project.build.finalName}-${maven.build.timestamp}.jar</s3Key>
-					<applicationName>thelocalite-core</applicationName>
-					<environmentName>api-env</environmentName>
-					<environmentRef>api-env</environmentRef>
-				</configuration>
 			</plugin>
 		</plugins>
-		<finalName>thelocalite-core</finalName>
+		<finalName>core</finalName>
 	</build>
 </project>

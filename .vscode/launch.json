@@ -1,0 +1,14 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot-LocaliteApplication<core>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "console": "internalConsole",
+      "mainClass": "core.LocaliteApplication",
+      "projectName": "core",
+      "args": "--spring.profiles.active=dev"
+    }
+  ]
+}
