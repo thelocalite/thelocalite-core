@@ -18,6 +18,8 @@ WORKDIR /usr/local/bin/
 
 ADD ./target/core.jar .
 
+EXPOSE 8080
+
 ENTRYPOINT [ "java", "-jar", "core.jar" ]
 
 ############### Execution ###############
