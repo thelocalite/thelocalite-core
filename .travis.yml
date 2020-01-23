@@ -6,8 +6,7 @@ services:
   - docker
 
 script:
-  - ./mvnw clean install
-  - docker build -t vatadepalli/deployimg -f Dockerfile .
+  - ./mvnw clean install; docker build -t vatadepalli/deployimg -f Dockerfile .
 
 deploy:
   provider: elasticbeanstalk
