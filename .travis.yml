@@ -2,17 +2,15 @@ sudo: required
 language: java
 jdk: openjdk8
 
-services:
-  - docker
-
 script:
-  - ./mvnw clean install; docker build -t vatadepalli/deployimg -f Dockerfile .
+  - ./mvnw clean install
+  - zip core.zip ./target/core.jar
 
 deploy:
   provider: elasticbeanstalk
   region: "us-east-1"
   app: "thelocalite-core"
-  env: "core-api-env"
+  env: "localite"
   bucket_name: "thelocalite-core"
   on:
     branch: master
