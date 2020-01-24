@@ -14,9 +14,11 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/")
 public class TestApi {
 
-  @Autowired TestService testService;
+  @Autowired
+  TestService testService;
 
-  @Autowired ProductService productService;
+  @Autowired
+  ProductService productService;
 
   @RequestMapping("")
   public String hello() {

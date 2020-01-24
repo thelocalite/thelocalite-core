@@ -3,6 +3,8 @@ package core.model;
 import java.io.Serializable;
 
 import javax.persistence.*;
+
+import core.model.ProductVendor.ProductVendorID;
 import lombok.*;
 
 /**
@@ -16,6 +18,7 @@ import lombok.*;
 @ToString
 @EqualsAndHashCode
 
+@IdClass(ProductVendorID.class)
 @Entity
 public class ProductVendor implements Serializable {
 
@@ -24,14 +27,15 @@ public class ProductVendor implements Serializable {
      */
     private static final long serialVersionUID = 1L;
 
+    // @Id
+    // @GeneratedValue(strategy = GenerationType.IDENTITY)
+    // private Long productVendorId;
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long productVendorId;
-
     @ManyToOne
     @JoinColumn
     private Product product;
 
+    @Id
     @ManyToOne
     @JoinColumn
     private Vendor vendor;
@@ -51,5 +55,28 @@ public class ProductVendor implements Serializable {
         this.product = product;
         this.vendor = vendor;
         this.vendorSpecificPrice = price;
+    }
+
+    /**
+     * When Defining a composite key, it is necessary to have a IDClass This class
+     * contains the entities which compose the composite key It also needs to have a
+     * parametrized constructor and equals and hashcode overridden
+     */
+    @EqualsAndHashCode
+    public static class ProductVendorID implements Serializable {
+
+        private static final long serialVersionUID = 1L;
+
+        private Vendor vendor;
+        private Product product;
+
+        public ProductVendorID() {
+        }
+
+        public ProductVendorID(Product product, Vendor vendor) {
+            this.product = product;
+            this.vendor = vendor;
+        }
+
     }
 }

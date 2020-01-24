@@ -44,8 +44,14 @@ public class Product {
 	@OneToMany(mappedBy = "product", cascade = CascadeType.ALL)
 	private Set<ProductVendor> productVendors;
 
-	public Product(String name, ProductVendor... productVendors) {
-		this.productName = name;
+	public Product(String productName, String productCategory, String productDescription, Double productMrp,
+			String productImageUrl, String productBrand, ProductVendor... productVendors) {
+		this.productName = productName;
+		this.productBrand = productBrand;
+		this.productCategory = productCategory;
+		this.productDescription = productDescription;
+		this.productMrp = productMrp;
+		this.productImageUrl = productImageUrl;
 		for (ProductVendor productVendor : productVendors)
 			productVendor.setProduct(this);
 		this.productVendors = Stream.of(productVendors).collect(Collectors.toSet());
