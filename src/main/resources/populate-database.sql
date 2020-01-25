@@ -2,6 +2,11 @@ use localite;
 
 -- Helper Queries
 
+
+-- show tables;
+-- drop table product;
+-- drop table vendor;
+
 -- select * from product;
 -- select * from vendor;
 -- select * from product_vendor;
