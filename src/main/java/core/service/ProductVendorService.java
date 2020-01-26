@@ -21,7 +21,15 @@ public class ProductVendorService {
         return productRepository.findAll();
     }
 
+    public List<Vendor> getAllVendors() {
+        return vendorRepository.findAll();
+    }
+
     public Vendor getVendorById(Integer id) {
         return vendorRepository.getOne(id);
+    }
+
+    public Product getProductById(Integer id) {
+        return productRepository.getOne(id);
     }
 }
