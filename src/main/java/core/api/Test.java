@@ -22,8 +22,13 @@ public class Test {
 
   @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
   public String test() {
-    productVendorApiTest();
     return "{\"message\": \"Hello, World!\"}";
+  }
+
+  @GetMapping("/test")
+  public String productVendorMappingTest() {
+    productVendorApiTest();
+    return "{\"message\": \"Hello, Test!\"}";
   }
 
   /**
