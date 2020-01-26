@@ -31,7 +31,7 @@ public class ProductVendorService {
         if (vendorOptional.isPresent())
             return vendorOptional.get();
         else
-            return null;
+            return new Vendor();
     }
 
     public Product getProductById(Integer id) {
@@ -39,6 +39,6 @@ public class ProductVendorService {
         if (productOptional.isPresent())
             return productOptional.get();
         else
-            return null;
+            return new Product();
     }
 }
