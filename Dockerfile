@@ -1,8 +1,6 @@
-FROM ubuntu:latest
+FROM openjdk:8-jdk-alpine
 
 LABEL maintainer="@vatadepalli"
-
-RUN apt-get update && apt-get install -y openjdk-8-jdk
 
 ENV version=docker_prod
 
