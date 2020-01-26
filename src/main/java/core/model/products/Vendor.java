@@ -8,6 +8,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -28,6 +30,7 @@ public class Vendor {
     private String description;
     private String imageUrl;
 
+    @JsonIgnore
     @OneToMany(mappedBy = "vendor")
     private Set<ProductVendor> productVendors;
 

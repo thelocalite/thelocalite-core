@@ -2,6 +2,7 @@ package core.api;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
 
 /**
@@ -11,7 +12,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 @RequestMapping("/")
 public class Test {
 
-  @GetMapping("/test")
+  @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
   public String test() {
     return "{\"message\": \"Hello, World!\"}";
   }
