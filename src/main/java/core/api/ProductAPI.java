@@ -14,7 +14,7 @@ import core.service.ProductVendorService;
 @CrossOrigin
 @RestController
 @RequestMapping("/product")
-public class ProductRestController {
+public class ProductAPI {
 
     @Autowired
     ProductVendorService productVendorService;
