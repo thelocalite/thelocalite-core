@@ -1,6 +1,7 @@
 package core.service;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -26,10 +27,18 @@ public class ProductVendorService {
     }
 
     public Vendor getVendorById(Integer id) {
-        return vendorRepository.findById(id).get();
+        Optional<Vendor> vendorOptional = vendorRepository.findById(id);
+        if (vendorOptional.isPresent())
+            return vendorOptional.get();
+        else
+            return null;
     }
 
     public Product getProductById(Integer id) {
-        return productRepository.findById(id).get();
+        Optional<Product> productOptional = productRepository.findById(id);
+        if (productOptional.isPresent())
+            return productOptional.get();
+        else
+            return null;
     }
 }
