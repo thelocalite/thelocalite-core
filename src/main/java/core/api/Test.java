@@ -2,15 +2,10 @@ package core.api;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
-import core.model.products.Product;
-import core.model.products.ProductVendor;
-import core.model.products.Vendor;
-import core.repository.products.ProductRepository;
-import core.repository.products.VendorRepository;
+import core.model.products.*;
+import core.repository.products.*;
 
 /**
  * Test
