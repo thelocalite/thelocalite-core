@@ -26,10 +26,10 @@ public class ProductVendorService {
     }
 
     public Vendor getVendorById(Integer id) {
-        return vendorRepository.getOne(id);
+        return vendorRepository.findById(id).get();
     }
 
     public Product getProductById(Integer id) {
-        return productRepository.getOne(id);
+        return productRepository.findById(id).get();
     }
 }

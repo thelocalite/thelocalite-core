@@ -19,10 +19,16 @@ public class VendorAPI {
     @Autowired
     ProductVendorService productVendorService;
 
-    // Gets all Products
+    // Gets all Vendors
     @GetMapping("")
     List<Vendor> getAllVendors() {
         return productVendorService.getAllVendors();
+    }
+
+    // Gets Vendor by ID
+    @GetMapping("/{vendorId}")
+    Vendor getVendorById(@PathVariable("vendorId") int vendorId) {
+        return productVendorService.getVendorById(vendorId);
     }
 
     // Gets all vendors which provide a product

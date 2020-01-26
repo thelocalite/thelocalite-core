@@ -25,6 +25,12 @@ public class ProductAPI {
         return productVendorService.getAllProducts();
     }
 
+    // Gets Product by ID
+    @GetMapping("/{productId}")
+    Product getProductById(@PathVariable("productId") int productId) {
+        return productVendorService.getProductById(productId);
+    }
+
     // Gets all products for a vendor
     @GetMapping("/vendor/{vendorId}")
     List<Product> getAllProductsOfAVendor(@PathVariable("vendorId") int vendorId) {
