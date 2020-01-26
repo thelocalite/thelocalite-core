@@ -1,3 +1,7 @@
 {
-    "java.configuration.updateBuildConfiguration": "automatic"
+  "java.configuration.updateBuildConfiguration": "automatic",
+  "java.dependency.syncWithFolderExplorer": true,
+  "terminal.integrated.fontSize": 14,
+  "debug.console.fontSize": 13,
+  "debug.console.wordWrap": false
 }
