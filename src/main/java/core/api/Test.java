@@ -1,11 +1,11 @@
 package core.api;
 
-import org.springframework.beans.factory.annotation.Autowired;
+// import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
-import core.model.products.*;
-import core.repository.products.*;
+// import core.model.products.*;
+// import core.repository.products.*;
 
 /**
  * Test
@@ -14,11 +14,11 @@ import core.repository.products.*;
 @RequestMapping("/")
 public class Test {
 
-  @Autowired
-  private ProductRepository productRepository;
+  // @Autowired
+  // private ProductRepository productRepository;
 
-  @Autowired
-  private VendorRepository vendorRepository;
+  // @Autowired
+  // private VendorRepository vendorRepository;
 
   @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
   public String test() {
@@ -27,7 +27,7 @@ public class Test {
 
   @GetMapping("/test")
   public String productVendorMappingTest() {
-    productVendorApiTest();
+    // productVendorApiTest();
     return "{\"message\": \"Hello, Test!\"}";
   }
 
@@ -56,20 +56,19 @@ public class Test {
    *                 2. Why do you not add the ProductVendor objects to the Set of
    *                 PVs in the vendor entity?
    */
-  public void productVendorApiTest() {
+  
+  /*
+   public void productVendorApiTest() {
 
     // Adds two products
 
     Product maggieProduct1 = new Product("Maggie Masala Noodles", "Nestle", "Snacks", "Masala Noodles 70gm", 12.0,
         "maggie-masala.jpg");
-
     Product maggieProduct2 = new Product("Maggie Atta Noodles", "Nestle", "Snacks", "Atta Noodles 70gm", 15.0,
         "maggie-atta.jpg");
 
     // Adds two vendors
-
     Vendor moreVendor = new Vendor("More Store", "Daily Store", "More.jpg");
-
     Vendor smartStore = new Vendor("Smart Store", "Super Store", "Smart.jpg");
 
     // Creates the first PV
@@ -113,5 +112,8 @@ public class Test {
     productRepository.save(maggieProduct2);
 
   }
+
+*/
+
 
 }
