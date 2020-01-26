@@ -11,6 +11,7 @@ import core.service.ProductVendorService;
 /**
  * Product Rest API Controller
  */
+@CrossOrigin
 @RestController
 @RequestMapping("/vendor")
 public class VendorRestController {
