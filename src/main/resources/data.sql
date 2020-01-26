@@ -1,3 +1,5 @@
+/* drop database localite; */
+/* create database localite; */
 use localite;
 
 -- Helper Queries
@@ -35,23 +37,23 @@ INSERT INTO `localite`.`product` ( `brand`, `category`, `description`, `image_ur
 
 -- Product_Vendor
 
-INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`) VALUES ('1', '1');
-INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`) VALUES ('1', '2');
-INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`) VALUES ('1', '3');
-INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`) VALUES ('1', '4');
-INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`) VALUES ('2', '5');
-INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`) VALUES ('2', '6');
-INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`) VALUES ('2', '7');
-INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`) VALUES ('3', '8');
-INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`) VALUES ('3', '9');
-INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`) VALUES ('3', '10');
-INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`) VALUES ('4', '1');
-INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`) VALUES ('5', '2');
-INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`) VALUES ('4', '3');
-INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`) VALUES ('5', '4');
-INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`) VALUES ('4', '5');
-INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`) VALUES ('5', '6');
-INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`) VALUES ('4', '7');
-INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`) VALUES ('5', '8');
-INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`) VALUES ('4', '9');
-INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`) VALUES ('5', '10');
+INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('1', '1', 23);
+INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('1', '2', 23);
+INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('1', '3', 23);
+INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('1', '4', 23);
+INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('2', '5', 23);
+INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('2', '6', 23);
+INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('2', '7', 23);
+INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('3', '8', 23);
+INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('3', '9', 23);
+INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('3', '10', 23);
+INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('4', '1', 23);
+INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('5', '2', 23);
+INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('4', '3', 23);
+INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('5', '4', 23);
+INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('4', '5', 23);
+INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('5', '6', 23);
+INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('4', '7', 23);
+INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('5', '8', 23);
+INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('4', '9', 23);
+INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('5', '10', 23);
