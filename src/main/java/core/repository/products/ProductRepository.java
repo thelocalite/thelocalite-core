@@ -11,4 +11,6 @@ import core.model.products.Product;
 @Repository
 public interface ProductRepository extends JpaRepository<Product, Integer> {
 
+    void getProductByName(String product);
+
 }

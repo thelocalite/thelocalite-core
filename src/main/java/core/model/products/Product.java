@@ -50,4 +50,12 @@ public class Product {
         this.imageUrl = imageUrl;
     }
 
+    public void addProductVendor(ProductVendor productVendor) {
+        this.productVendors.add(productVendor);
+    }
+
+    public void removeProductVendor(ProductVendor productVendor) {
+        this.productVendors.remove(productVendor);
+    }
+
 }
