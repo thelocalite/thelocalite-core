@@ -9,6 +9,9 @@ import org.springframework.stereotype.Service;
 import core.model.products.*;
 import core.repository.products.*;
 
+/**
+ * Service Layer for Products and Vendors related service requests
+ */
 @Service
 public class ProductVendorService {
 
@@ -18,14 +21,17 @@ public class ProductVendorService {
     @Autowired
     VendorRepository vendorRepository;
 
+    // Gets all Products
     public List<Product> getAllProducts() {
         return productRepository.findAll();
     }
 
+    // Gets all Vendors
     public List<Vendor> getAllVendors() {
         return vendorRepository.findAll();
     }
 
+    // Gets Vendor by ID
     public Vendor getVendorById(Integer id) {
         Optional<Vendor> vendorOptional = vendorRepository.findById(id);
         if (vendorOptional.isPresent())
@@ -34,6 +40,7 @@ public class ProductVendorService {
             return new Vendor();
     }
 
+    // Gets Product by ID
     public Product getProductById(Integer id) {
         Optional<Product> productOptional = productRepository.findById(id);
         if (productOptional.isPresent())
