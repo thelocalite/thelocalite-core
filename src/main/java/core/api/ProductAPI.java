@@ -53,4 +53,41 @@ public class ProductAPI {
         return products;
     }
 
+    /**
+     * Search API
+     * 
+     * Takes in query for product and returns search results
+     */
+
+    @GetMapping("/search/{searchTerm}")
+    List<Product> searchProducts(@PathVariable("searchTerm") String searchTerm) {
+
+        // Creates empty list to populate
+        List<Product> products = new ArrayList<>();
+
+        // TODO Search Logic
+        products.add(new Product(searchTerm, "brand", "category", "description", 10.0, "imageUrl"));
+
+        // Return search result
+        return products;
+    }
+
+    /**
+     * AutoComplete API
+     * 
+     * Returns a list of all product names for AutoComplete functionality
+     */
+
+    @GetMapping("/productNames")
+    List<String> getProductNames() {
+
+        // Creates empty list to populate
+        List<String> productNames = new ArrayList<>();
+
+        // TODO Get All Product Names
+
+        // Return search result
+        return productNames;
+    }
+
 }
