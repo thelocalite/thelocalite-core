@@ -14,8 +14,13 @@ import core.model.products.ProductVendor;
 @Repository
 public interface ProductRepository extends JpaRepository<Product, Integer> {
 
+    // TO DELETE
     void getProductByName(String product);
 
+
+    // ALSO TO DELETE AFTER ALTERNATIVE
+
+    // Aditya:  "Think about the efficiency!!! "
     @Query(value = "select * from product_vendor pv where pv.vendor_id = :vendorId, pv.product_id = :productId ", nativeQuery = true)
 	ProductVendor getPrice(@Param("productId") int productId, @Param("vendorId") int vendorId);
 
