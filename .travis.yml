@@ -19,3 +19,6 @@ deploy:
   provider: heroku
   api_key: $HEROKU_API_KEY
   app: localite-core
+  
+notifications:
+  slack: thelocaliteteam:N10LQnAEjwDFG7L9TIRlnAea
