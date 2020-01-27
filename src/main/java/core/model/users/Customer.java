@@ -35,8 +35,8 @@ public class Customer {
     @OneToMany(mappedBy = "customer", cascade = CascadeType.ALL)
     private Set<Cart> cartItems;
 
-    // @OneToMany(mappedBy = "customer", cascade = CascadeType.ALL)
-    // private Set<Cart> order; 
+    @OneToMany(mappedBy = "customer", cascade = CascadeType.ALL)
+    private Set<CustomerOrder> customerOrder; 
 
     public Customer(String name, String email) {
         this.name = name;

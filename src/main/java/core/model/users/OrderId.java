@@ -5,7 +5,7 @@ import java.util.Date;
 
 import javax.persistence.Embeddable;
 import javax.persistence.JoinColumn;
-import javax.persistence.OneToOne;
+import javax.persistence.ManyToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
@@ -22,15 +22,15 @@ import lombok.Setter;
 @Embeddable
 @SuppressWarnings("serial")
 public class OrderId implements Serializable {
-    @OneToOne
+    @ManyToOne
     @JoinColumn
-    private Customer customer;
+    private Customer keyCustomer;
 
     @Temporal(TemporalType.TIMESTAMP)
-    private Date orderTimeStamp;
+    private Date keyOrderTimeStamp;
 
     public OrderId(Customer customer, Date orderTimeStamp) {
-        this.customer = customer;
-        this.orderTimeStamp = orderTimeStamp;
+        this.keyCustomer = customer;
+        this.keyOrderTimeStamp = orderTimeStamp;
     }
 }
