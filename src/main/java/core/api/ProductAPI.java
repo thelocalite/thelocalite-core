@@ -66,7 +66,12 @@ public class ProductAPI {
         List<Product> products = new ArrayList<>();
 
         // TODO Search Logic
-        products.add(new Product(searchTerm, "brand", "category", "description", 10.0, "imageUrl"));
+        List<Product> allProducts = productVendorService.getAllProducts();
+
+        for (Product product : allProducts) {
+            if (product.getName().toLowerCase().contains(searchTerm.toLowerCase()))
+                products.add(product);
+        }
 
         // Return search result
         return products;
