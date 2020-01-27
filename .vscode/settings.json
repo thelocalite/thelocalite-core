@@ -3,6 +3,5 @@
   "java.dependency.syncWithFolderExplorer": true,
   "terminal.integrated.fontSize": 14,
   "debug.console.fontSize": 13,
-  "debug.console.wordWrap": false,
-  "maven.view": "hierarchical"
+  "debug.console.wordWrap": false
 }

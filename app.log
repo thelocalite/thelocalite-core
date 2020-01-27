@@ -1,0 +1,492 @@
+20-43-27  INFO 6041 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+20-43-27  INFO 6041 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12ms. Found 2 JPA repository interfaces.
+20-43-27  INFO 6041 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20-43-27  WARN 6041 --- [restartedMain] org.apache.tomcat.util.modeler.Registry  : The MBean registry cannot be disabled because it has already been initialised
+20-43-27  INFO 6041 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+20-43-27  INFO 6041 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 354 ms
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BooleanType@111127cd
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BooleanType@111127cd
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@111127cd
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@1dac23d7
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration true_false -> org.hibernate.type.TrueFalseType@7b69b7a8
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration yes_no -> org.hibernate.type.YesNoType@2fe897c6
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.ByteType@7f9a97cd
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.ByteType@7f9a97cd
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@7f9a97cd
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration character -> org.hibernate.type.CharacterType@28bb15b0
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration char -> org.hibernate.type.CharacterType@28bb15b0
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@28bb15b0
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.ShortType@4b73dd7a
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.ShortType@4b73dd7a
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Short -> org.hibernate.type.ShortType@4b73dd7a
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration integer -> org.hibernate.type.IntegerType@5231e560
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration int -> org.hibernate.type.IntegerType@5231e560
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@5231e560
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.LongType@5dae38a0
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.LongType@5dae38a0
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Long -> org.hibernate.type.LongType@5dae38a0
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.FloatType@4f725559
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.FloatType@4f725559
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Float -> org.hibernate.type.FloatType@4f725559
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.DoubleType@75695318
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.DoubleType@75695318
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@75695318
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@5773423e
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@5773423e
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_integer -> org.hibernate.type.BigIntegerType@44f24f5e
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@44f24f5e
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration string -> org.hibernate.type.StringType@524b8f21
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.String -> org.hibernate.type.StringType@524b8f21
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration nstring -> org.hibernate.type.StringNVarcharType@eb6d9b8
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@76eaddda
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration url -> org.hibernate.type.UrlType@39ba8bc4
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.net.URL -> org.hibernate.type.UrlType@39ba8bc4
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> org.hibernate.type.DurationType@7f45ad45
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> org.hibernate.type.DurationType@7f45ad45
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Instant -> org.hibernate.type.InstantType@159056a5
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Instant -> org.hibernate.type.InstantType@159056a5
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@1c7043e2
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@1c7043e2
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDate -> org.hibernate.type.LocalDateType@13370771
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@13370771
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@87fcb3f
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@87fcb3f
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@62aaa7ad
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@62aaa7ad
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@3e3c224b
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@3e3c224b
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@2393d291
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@2393d291
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration date -> org.hibernate.type.DateType@72ea8ad9
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Date -> org.hibernate.type.DateType@72ea8ad9
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration time -> org.hibernate.type.TimeType@4f1b9e49
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Time -> org.hibernate.type.TimeType@4f1b9e49
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration timestamp -> org.hibernate.type.TimestampType@109ca4c9
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@109ca4c9
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Date -> org.hibernate.type.TimestampType@109ca4c9
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@1b35ccd1
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar -> org.hibernate.type.CalendarType@1c5e8d40
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@1c5e8d40
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@1c5e8d40
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@170a3929
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration locale -> org.hibernate.type.LocaleType@28cddbde
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@28cddbde
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration currency -> org.hibernate.type.CurrencyType@25cd490f
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@25cd490f
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration timezone -> org.hibernate.type.TimeZoneType@6c83f110
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@6c83f110
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration class -> org.hibernate.type.ClassType@2e07c520
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Class -> org.hibernate.type.ClassType@2e07c520
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@3a4b7082
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@3a4b7082
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@6e3e92a4
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary -> org.hibernate.type.BinaryType@25cdc5ca
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte[] -> org.hibernate.type.BinaryType@25cdc5ca
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [B -> org.hibernate.type.BinaryType@25cdc5ca
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@5fafafd6
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@5fafafd6
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@5fafafd6
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration row_version -> org.hibernate.type.RowVersionType@53c6e65a
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration image -> org.hibernate.type.ImageType@49a13b2
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration characters -> org.hibernate.type.CharArrayType@63144aa9
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration char[] -> org.hibernate.type.CharArrayType@63144aa9
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [C -> org.hibernate.type.CharArrayType@63144aa9
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@47ae4fa6
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@47ae4fa6
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@47ae4fa6
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration text -> org.hibernate.type.TextType@5e2574cf
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ntext -> org.hibernate.type.NTextType@39bcff12
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration blob -> org.hibernate.type.BlobType@5d382bb8
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@5d382bb8
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@47c76bdb
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration clob -> org.hibernate.type.ClobType@46902568
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@46902568
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration nclob -> org.hibernate.type.NClobType@1c76c442
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@1c76c442
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@3e458e61
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@2c3e56d3
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration serializable -> org.hibernate.type.SerializableType@20386eb0
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration object -> org.hibernate.type.ObjectType@52fe9ef
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@52fe9ef
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@676416e4
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@1309e43
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@46f06250
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@4c36abd1
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@ba25785
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@ee50234
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@4bc2035a
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@32d351d0
+20-43-27 DEBUG 6041 --- [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@4e3618d0] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@4f5757f0]
+20-43-27 DEBUG 6041 --- [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@4e3618d0] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@558116a1]
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.SQL                        : alter table cart drop foreign key FKdebwvad6pp1ekiqy5jtixqbaj
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.SQL                        : alter table cart drop foreign key FK3d704slv66tw6x5hmbm6p2x3u
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.SQL                        : alter table cart drop foreign key FK999amakrwq56e0mmj456l8lr6
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.SQL                        : alter table customer_order drop foreign key FKlug5xe5doi1jq3it1i5io07vn
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.SQL                        : alter table customer_order drop foreign key FKf9abd30bhiqvugayxlpq8ryq9
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.SQL                        : alter table customer_order drop foreign key FKqodal2jjysnj6lsn46nvndcwr
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.SQL                        : alter table customer_order drop foreign key FKqtlbywd25dhqx5s9yaqp0b52l
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.SQL                        : alter table product_vendor drop foreign key FK4dh5569om6a0g8xvmke9icrww
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.SQL                        : alter table product_vendor drop foreign key FK60ssua8d4oysje24ijp9edkyt
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.SQL                        : drop table if exists cart
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.SQL                        : drop table if exists customer
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.SQL                        : drop table if exists customer_order
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.SQL                        : drop table if exists product
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.SQL                        : drop table if exists product_vendor
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.SQL                        : drop table if exists vendor
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.SQL                        : create table cart (id integer not null auto_increment, quantity integer not null, saved_for_later bit not null, customer_id integer, product_id integer, vendor_id integer, primary key (id)) engine=InnoDB
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.SQL                        : create table customer (id integer not null auto_increment, email varchar(255), name varchar(255), primary key (id)) engine=InnoDB
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.SQL                        : create table customer_order (key_order_time_stamp datetime not null, price double precision, quantity integer not null, time_stamp datetime, key_customer_id integer not null, customer_id integer, product_id integer, vendor_id integer, primary key (key_customer_id, key_order_time_stamp)) engine=InnoDB
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.SQL                        : create table product (id integer not null auto_increment, brand varchar(255), category varchar(255), description varchar(255), image_url varchar(255), mrp double precision, name varchar(255), primary key (id)) engine=InnoDB
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.SQL                        : create table product_vendor (vendor_specific_price double precision, vendor_id integer not null, product_id integer not null, primary key (vendor_id, product_id)) engine=InnoDB
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.SQL                        : create table vendor (id integer not null auto_increment, description varchar(255), image_url varchar(255), name varchar(255), primary key (id)) engine=InnoDB
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.SQL                        : alter table cart add constraint FKdebwvad6pp1ekiqy5jtixqbaj foreign key (customer_id) references customer (id)
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.SQL                        : alter table cart add constraint FK3d704slv66tw6x5hmbm6p2x3u foreign key (product_id) references product (id)
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.SQL                        : alter table cart add constraint FK999amakrwq56e0mmj456l8lr6 foreign key (vendor_id) references vendor (id)
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.SQL                        : alter table customer_order add constraint FKlug5xe5doi1jq3it1i5io07vn foreign key (key_customer_id) references customer (id)
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.SQL                        : alter table customer_order add constraint FKf9abd30bhiqvugayxlpq8ryq9 foreign key (customer_id) references customer (id)
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.SQL                        : alter table customer_order add constraint FKqodal2jjysnj6lsn46nvndcwr foreign key (product_id) references product (id)
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.SQL                        : alter table customer_order add constraint FKqtlbywd25dhqx5s9yaqp0b52l foreign key (vendor_id) references vendor (id)
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.SQL                        : alter table product_vendor add constraint FK4dh5569om6a0g8xvmke9icrww foreign key (vendor_id) references vendor (id)
+20-43-27 DEBUG 6041 --- [restartedMain] org.hibernate.SQL                        : alter table product_vendor add constraint FK60ssua8d4oysje24ijp9edkyt foreign key (product_id) references product (id)
+20-43-27 TRACE 6041 --- [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryCreated from [org.hibernate.internal.SessionFactoryImpl@558116a1] for TypeConfiguration
+20-43-27  INFO 6041 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+20-43-27  INFO 6041 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+20-43-27  WARN 6041 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20-43-27  INFO 6041 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+20-43-27  INFO 6041 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+20-43-27  INFO 6041 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+20-43-27  INFO 6041 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+20-43-27  INFO 6041 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+20-43-27 TRACE 6041 --- [SpringContextShutdownHook] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryClosed from [org.hibernate.internal.SessionFactoryImpl@558116a1] for TypeConfiguration
+20-43-27 DEBUG 6041 --- [SpringContextShutdownHook] o.h.type.spi.TypeConfiguration$Scope     : Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@728e84e3] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@558116a1]
+20-43-27  INFO 6070 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in /Users/vatadepalli/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/Users/vatadepalli/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/Users/vatadepalli/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/Users/vatadepalli/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/Users/vatadepalli/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/Users/vatadepalli/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/Users/vatadepalli/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+20-43-27  INFO 6070 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+20-43-27  INFO 6070 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+20-43-27  INFO 6070 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+20-43-27  INFO 6070 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57ms. Found 2 JPA repository interfaces.
+20-43-27  INFO 6070 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20-43-27  INFO 6070 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+20-43-27  INFO 6070 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1395 ms
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BooleanType@7820e06c
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BooleanType@7820e06c
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@7820e06c
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@334d4cec
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration true_false -> org.hibernate.type.TrueFalseType@e69f9d
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration yes_no -> org.hibernate.type.YesNoType@bf67071
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.ByteType@74472ddb
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.ByteType@74472ddb
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@74472ddb
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration character -> org.hibernate.type.CharacterType@276506aa
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration char -> org.hibernate.type.CharacterType@276506aa
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@276506aa
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.ShortType@569bec6d
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.ShortType@569bec6d
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Short -> org.hibernate.type.ShortType@569bec6d
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration integer -> org.hibernate.type.IntegerType@38810e72
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration int -> org.hibernate.type.IntegerType@38810e72
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@38810e72
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.LongType@b0cf25a
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.LongType@b0cf25a
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Long -> org.hibernate.type.LongType@b0cf25a
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.FloatType@37b5283
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.FloatType@37b5283
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Float -> org.hibernate.type.FloatType@37b5283
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.DoubleType@22ee7193
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.DoubleType@22ee7193
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@22ee7193
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@5a1ba4c8
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@5a1ba4c8
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_integer -> org.hibernate.type.BigIntegerType@3937eea0
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@3937eea0
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration string -> org.hibernate.type.StringType@1fc07ca7
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.String -> org.hibernate.type.StringType@1fc07ca7
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration nstring -> org.hibernate.type.StringNVarcharType@34594c5d
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@24ec3085
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration url -> org.hibernate.type.UrlType@20b59553
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.net.URL -> org.hibernate.type.UrlType@20b59553
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> org.hibernate.type.DurationType@3d74b81a
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> org.hibernate.type.DurationType@3d74b81a
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Instant -> org.hibernate.type.InstantType@7f2e104c
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Instant -> org.hibernate.type.InstantType@7f2e104c
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@767fcf42
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@767fcf42
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDate -> org.hibernate.type.LocalDateType@391bafd4
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@391bafd4
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@7b6b2220
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@7b6b2220
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@6f6eeea3
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@6f6eeea3
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@2a3fc733
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@2a3fc733
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@37585262
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@37585262
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration date -> org.hibernate.type.DateType@1ad9a5bf
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Date -> org.hibernate.type.DateType@1ad9a5bf
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration time -> org.hibernate.type.TimeType@7c8da43
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Time -> org.hibernate.type.TimeType@7c8da43
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration timestamp -> org.hibernate.type.TimestampType@698e4698
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@698e4698
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Date -> org.hibernate.type.TimestampType@698e4698
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@5f8d7c2c
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar -> org.hibernate.type.CalendarType@659f97a3
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@659f97a3
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@659f97a3
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@54fe25a5
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration locale -> org.hibernate.type.LocaleType@345f3ab4
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@345f3ab4
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration currency -> org.hibernate.type.CurrencyType@6ec911fe
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@6ec911fe
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration timezone -> org.hibernate.type.TimeZoneType@7b2cdbde
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@7b2cdbde
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration class -> org.hibernate.type.ClassType@51e1cef6
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Class -> org.hibernate.type.ClassType@51e1cef6
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@91dcc6f
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@91dcc6f
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@762a16cb
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary -> org.hibernate.type.BinaryType@33039767
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte[] -> org.hibernate.type.BinaryType@33039767
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [B -> org.hibernate.type.BinaryType@33039767
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@4d35fb8
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@4d35fb8
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@4d35fb8
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration row_version -> org.hibernate.type.RowVersionType@fb972ee
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration image -> org.hibernate.type.ImageType@7f350175
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration characters -> org.hibernate.type.CharArrayType@5ea1618a
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration char[] -> org.hibernate.type.CharArrayType@5ea1618a
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [C -> org.hibernate.type.CharArrayType@5ea1618a
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@93b53ab
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@93b53ab
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@93b53ab
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration text -> org.hibernate.type.TextType@14962554
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ntext -> org.hibernate.type.NTextType@4e4f87ad
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration blob -> org.hibernate.type.BlobType@7d53bcd8
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@7d53bcd8
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@485858e8
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration clob -> org.hibernate.type.ClobType@42fdc251
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@42fdc251
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration nclob -> org.hibernate.type.NClobType@6458ad99
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@6458ad99
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@66226185
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@bf46b25
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration serializable -> org.hibernate.type.SerializableType@46bf04a3
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration object -> org.hibernate.type.ObjectType@5e5d5007
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@5e5d5007
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@2481b995
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@1068086a
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@66f03291
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@23d427ab
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@ab06f55
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@5acb0d31
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@3d48c843
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@3fa3593e
+20-43-27 DEBUG 6070 --- [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@3fca6daf] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@2e920b3]
+20-43-27 DEBUG 6070 --- [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@3fca6daf] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@262ac0f5]
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.SQL                        : alter table cart drop foreign key FKdebwvad6pp1ekiqy5jtixqbaj
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.SQL                        : alter table cart drop foreign key FK3d704slv66tw6x5hmbm6p2x3u
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.SQL                        : alter table cart drop foreign key FK999amakrwq56e0mmj456l8lr6
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.SQL                        : alter table customer_order drop foreign key FKlug5xe5doi1jq3it1i5io07vn
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.SQL                        : alter table customer_order drop foreign key FKf9abd30bhiqvugayxlpq8ryq9
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.SQL                        : alter table customer_order drop foreign key FKqodal2jjysnj6lsn46nvndcwr
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.SQL                        : alter table customer_order drop foreign key FKqtlbywd25dhqx5s9yaqp0b52l
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.SQL                        : alter table product_vendor drop foreign key FK4dh5569om6a0g8xvmke9icrww
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.SQL                        : alter table product_vendor drop foreign key FK60ssua8d4oysje24ijp9edkyt
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.SQL                        : drop table if exists cart
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.SQL                        : drop table if exists customer
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.SQL                        : drop table if exists customer_order
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.SQL                        : drop table if exists product
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.SQL                        : drop table if exists product_vendor
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.SQL                        : drop table if exists vendor
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.SQL                        : create table cart (id integer not null auto_increment, quantity integer not null, saved_for_later bit not null, customer_id integer, product_id integer, vendor_id integer, primary key (id)) engine=InnoDB
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.SQL                        : create table customer (id integer not null auto_increment, email varchar(255), name varchar(255), primary key (id)) engine=InnoDB
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.SQL                        : create table customer_order (key_order_time_stamp datetime not null, price double precision, quantity integer not null, time_stamp datetime, key_customer_id integer not null, customer_id integer, product_id integer, vendor_id integer, primary key (key_customer_id, key_order_time_stamp)) engine=InnoDB
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.SQL                        : create table product (id integer not null auto_increment, brand varchar(255), category varchar(255), description varchar(255), image_url varchar(255), mrp double precision, name varchar(255), primary key (id)) engine=InnoDB
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.SQL                        : create table product_vendor (vendor_specific_price double precision, vendor_id integer not null, product_id integer not null, primary key (vendor_id, product_id)) engine=InnoDB
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.SQL                        : create table vendor (id integer not null auto_increment, description varchar(255), image_url varchar(255), name varchar(255), primary key (id)) engine=InnoDB
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.SQL                        : alter table cart add constraint FKdebwvad6pp1ekiqy5jtixqbaj foreign key (customer_id) references customer (id)
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.SQL                        : alter table cart add constraint FK3d704slv66tw6x5hmbm6p2x3u foreign key (product_id) references product (id)
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.SQL                        : alter table cart add constraint FK999amakrwq56e0mmj456l8lr6 foreign key (vendor_id) references vendor (id)
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.SQL                        : alter table customer_order add constraint FKlug5xe5doi1jq3it1i5io07vn foreign key (key_customer_id) references customer (id)
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.SQL                        : alter table customer_order add constraint FKf9abd30bhiqvugayxlpq8ryq9 foreign key (customer_id) references customer (id)
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.SQL                        : alter table customer_order add constraint FKqodal2jjysnj6lsn46nvndcwr foreign key (product_id) references product (id)
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.SQL                        : alter table customer_order add constraint FKqtlbywd25dhqx5s9yaqp0b52l foreign key (vendor_id) references vendor (id)
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.SQL                        : alter table product_vendor add constraint FK4dh5569om6a0g8xvmke9icrww foreign key (vendor_id) references vendor (id)
+20-43-27 DEBUG 6070 --- [restartedMain] org.hibernate.SQL                        : alter table product_vendor add constraint FK60ssua8d4oysje24ijp9edkyt foreign key (product_id) references product (id)
+20-43-27 TRACE 6070 --- [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryCreated from [org.hibernate.internal.SessionFactoryImpl@262ac0f5] for TypeConfiguration
+20-43-27  INFO 6070 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+20-43-27  INFO 6070 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+20-43-27  WARN 6070 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20-43-27  INFO 6070 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+20-43-27  INFO 6070 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+20-43-27  INFO 6070 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+20-43-27  INFO 6070 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+20-44-27  INFO 6070 --- [Thread-5] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+20-44-27  INFO 6070 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+20-44-27 TRACE 6070 --- [Thread-5] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryClosed from [org.hibernate.internal.SessionFactoryImpl@262ac0f5] for TypeConfiguration
+20-44-27 DEBUG 6070 --- [Thread-5] o.h.type.spi.TypeConfiguration$Scope     : Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@a918597] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@262ac0f5]
+20-44-27  INFO 6070 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+20-44-27  INFO 6070 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14ms. Found 2 JPA repository interfaces.
+20-44-27  INFO 6070 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20-44-27  INFO 6091 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in /Users/vatadepalli/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/Users/vatadepalli/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/Users/vatadepalli/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/Users/vatadepalli/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/Users/vatadepalli/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/Users/vatadepalli/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/Users/vatadepalli/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+20-44-27  INFO 6091 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+20-44-27  INFO 6091 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+20-44-27  INFO 6091 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+20-44-27  INFO 6091 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55ms. Found 2 JPA repository interfaces.
+20-44-27  INFO 6091 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20-44-27  INFO 6091 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+20-44-27  INFO 6091 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1467 ms
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BooleanType@5e9a8ca5
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BooleanType@5e9a8ca5
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@5e9a8ca5
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@77e9a0c0
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration true_false -> org.hibernate.type.TrueFalseType@6fe07a79
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration yes_no -> org.hibernate.type.YesNoType@d154ee9
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.ByteType@129e7895
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.ByteType@129e7895
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@129e7895
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration character -> org.hibernate.type.CharacterType@6a9cee97
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration char -> org.hibernate.type.CharacterType@6a9cee97
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@6a9cee97
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.ShortType@2a3c461d
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.ShortType@2a3c461d
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Short -> org.hibernate.type.ShortType@2a3c461d
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration integer -> org.hibernate.type.IntegerType@5a933352
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration int -> org.hibernate.type.IntegerType@5a933352
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@5a933352
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.LongType@580bb4eb
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.LongType@580bb4eb
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Long -> org.hibernate.type.LongType@580bb4eb
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.FloatType@91ad865
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.FloatType@91ad865
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Float -> org.hibernate.type.FloatType@91ad865
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.DoubleType@5b899d1
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.DoubleType@5b899d1
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@5b899d1
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@6a957291
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@6a957291
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_integer -> org.hibernate.type.BigIntegerType@15168061
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@15168061
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration string -> org.hibernate.type.StringType@6724aa9d
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.String -> org.hibernate.type.StringType@6724aa9d
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration nstring -> org.hibernate.type.StringNVarcharType@12647d59
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@7bc994cd
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration url -> org.hibernate.type.UrlType@2a56e048
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.net.URL -> org.hibernate.type.UrlType@2a56e048
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> org.hibernate.type.DurationType@4f04788c
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> org.hibernate.type.DurationType@4f04788c
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Instant -> org.hibernate.type.InstantType@2f2abe55
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Instant -> org.hibernate.type.InstantType@2f2abe55
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@642b8398
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@642b8398
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDate -> org.hibernate.type.LocalDateType@787b5c1c
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@787b5c1c
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@5ee17c3c
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@5ee17c3c
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@69666459
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@69666459
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@2cee9933
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@2cee9933
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@399a83
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@399a83
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration date -> org.hibernate.type.DateType@2c5617ff
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Date -> org.hibernate.type.DateType@2c5617ff
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration time -> org.hibernate.type.TimeType@14ea5587
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Time -> org.hibernate.type.TimeType@14ea5587
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration timestamp -> org.hibernate.type.TimestampType@6f3f48ef
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@6f3f48ef
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Date -> org.hibernate.type.TimestampType@6f3f48ef
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@1668daec
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar -> org.hibernate.type.CalendarType@2c8ce21e
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@2c8ce21e
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@2c8ce21e
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@4ddbca61
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration locale -> org.hibernate.type.LocaleType@4d6732ec
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@4d6732ec
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration currency -> org.hibernate.type.CurrencyType@28526a48
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@28526a48
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration timezone -> org.hibernate.type.TimeZoneType@42039e48
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@42039e48
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration class -> org.hibernate.type.ClassType@13f9706c
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Class -> org.hibernate.type.ClassType@13f9706c
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@585f1859
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@585f1859
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@5a7c38b6
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary -> org.hibernate.type.BinaryType@6c8c494e
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte[] -> org.hibernate.type.BinaryType@6c8c494e
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [B -> org.hibernate.type.BinaryType@6c8c494e
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@23cf81d0
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@23cf81d0
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@23cf81d0
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration row_version -> org.hibernate.type.RowVersionType@3e1c07f7
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration image -> org.hibernate.type.ImageType@5425d043
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration characters -> org.hibernate.type.CharArrayType@743b9689
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration char[] -> org.hibernate.type.CharArrayType@743b9689
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [C -> org.hibernate.type.CharArrayType@743b9689
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@5968a084
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@5968a084
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@5968a084
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration text -> org.hibernate.type.TextType@7f2a26b7
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ntext -> org.hibernate.type.NTextType@13dd7061
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration blob -> org.hibernate.type.BlobType@970a53a
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@970a53a
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@1e5ecc8b
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration clob -> org.hibernate.type.ClobType@53fe9dc9
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@53fe9dc9
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration nclob -> org.hibernate.type.NClobType@7b1731a3
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@7b1731a3
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@7914d22
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@6e41ac81
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration serializable -> org.hibernate.type.SerializableType@62d44e08
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration object -> org.hibernate.type.ObjectType@f3dc350
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@f3dc350
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@750105ae
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@14476f1d
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@3a4a4930
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@1bc9c21a
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@669888b8
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@49882cf1
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@2163ff39
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@746f301d
+20-44-27 DEBUG 6091 --- [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@390163] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@636e3c42]
+20-44-27 DEBUG 6091 --- [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@390163] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@78a69c81]
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.SQL                        : alter table cart drop foreign key FKdebwvad6pp1ekiqy5jtixqbaj
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.SQL                        : alter table cart drop foreign key FK3d704slv66tw6x5hmbm6p2x3u
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.SQL                        : alter table cart drop foreign key FK999amakrwq56e0mmj456l8lr6
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.SQL                        : alter table customer_order drop foreign key FKlug5xe5doi1jq3it1i5io07vn
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.SQL                        : alter table customer_order drop foreign key FKf9abd30bhiqvugayxlpq8ryq9
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.SQL                        : alter table customer_order drop foreign key FKqodal2jjysnj6lsn46nvndcwr
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.SQL                        : alter table customer_order drop foreign key FKqtlbywd25dhqx5s9yaqp0b52l
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.SQL                        : alter table product_vendor drop foreign key FK4dh5569om6a0g8xvmke9icrww
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.SQL                        : alter table product_vendor drop foreign key FK60ssua8d4oysje24ijp9edkyt
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.SQL                        : drop table if exists cart
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.SQL                        : drop table if exists customer
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.SQL                        : drop table if exists customer_order
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.SQL                        : drop table if exists product
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.SQL                        : drop table if exists product_vendor
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.SQL                        : drop table if exists vendor
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.SQL                        : create table cart (id integer not null auto_increment, quantity integer not null, saved_for_later bit not null, customer_id integer, product_id integer, vendor_id integer, primary key (id)) engine=InnoDB
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.SQL                        : create table customer (id integer not null auto_increment, email varchar(255), name varchar(255), primary key (id)) engine=InnoDB
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.SQL                        : create table customer_order (key_order_time_stamp datetime not null, price double precision, quantity integer not null, time_stamp datetime, key_customer_id integer not null, customer_id integer, product_id integer, vendor_id integer, primary key (key_customer_id, key_order_time_stamp)) engine=InnoDB
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.SQL                        : create table product (id integer not null auto_increment, brand varchar(255), category varchar(255), description varchar(255), image_url varchar(255), mrp double precision, name varchar(255), primary key (id)) engine=InnoDB
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.SQL                        : create table product_vendor (vendor_specific_price double precision, vendor_id integer not null, product_id integer not null, primary key (vendor_id, product_id)) engine=InnoDB
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.SQL                        : create table vendor (id integer not null auto_increment, description varchar(255), image_url varchar(255), name varchar(255), primary key (id)) engine=InnoDB
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.SQL                        : alter table cart add constraint FKdebwvad6pp1ekiqy5jtixqbaj foreign key (customer_id) references customer (id)
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.SQL                        : alter table cart add constraint FK3d704slv66tw6x5hmbm6p2x3u foreign key (product_id) references product (id)
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.SQL                        : alter table cart add constraint FK999amakrwq56e0mmj456l8lr6 foreign key (vendor_id) references vendor (id)
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.SQL                        : alter table customer_order add constraint FKlug5xe5doi1jq3it1i5io07vn foreign key (key_customer_id) references customer (id)
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.SQL                        : alter table customer_order add constraint FKf9abd30bhiqvugayxlpq8ryq9 foreign key (customer_id) references customer (id)
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.SQL                        : alter table customer_order add constraint FKqodal2jjysnj6lsn46nvndcwr foreign key (product_id) references product (id)
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.SQL                        : alter table customer_order add constraint FKqtlbywd25dhqx5s9yaqp0b52l foreign key (vendor_id) references vendor (id)
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.SQL                        : alter table product_vendor add constraint FK4dh5569om6a0g8xvmke9icrww foreign key (vendor_id) references vendor (id)
+20-44-27 DEBUG 6091 --- [restartedMain] org.hibernate.SQL                        : alter table product_vendor add constraint FK60ssua8d4oysje24ijp9edkyt foreign key (product_id) references product (id)
+20-44-27 TRACE 6091 --- [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryCreated from [org.hibernate.internal.SessionFactoryImpl@78a69c81] for TypeConfiguration
+20-44-27  INFO 6091 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+20-44-27  INFO 6091 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+20-44-27  WARN 6091 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20-44-27  INFO 6091 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+20-44-27  INFO 6091 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+20-44-27  INFO 6091 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+20-44-27  INFO 6091 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+20-45-27  INFO 6091 --- [Thread-5] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+20-45-27  INFO 6091 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+20-45-27 TRACE 6091 --- [Thread-5] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryClosed from [org.hibernate.internal.SessionFactoryImpl@78a69c81] for TypeConfiguration
+20-45-27 DEBUG 6091 --- [Thread-5] o.h.type.spi.TypeConfiguration$Scope     : Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@3870951d] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@78a69c81]
