@@ -52,4 +52,14 @@ public class VendorAPI {
         // Return our populated vendors list! :D
         return vendors;
     }
+
+    // Saves vendor from form data using requestbody
+    @PostMapping("/add")
+    String addVendor(@RequestBody Vendor vendor) {
+        if (productVendorService.saveVendor(vendor))
+            return "\"Response\":\"Added Vendor\"";
+        else
+            return "Error: Vendor not saved!";
+    }
+
 }

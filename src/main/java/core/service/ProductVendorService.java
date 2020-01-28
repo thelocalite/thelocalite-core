@@ -48,4 +48,22 @@ public class ProductVendorService {
         else
             return new Product();
     }
+
+    // Saves Product if not null
+    public Boolean saveProduct(Product product) {
+        if (product != null) {
+            productRepository.save(product);
+            return true;
+        } else
+            return false;
+    }
+
+    // Saves Vendor if not null
+    public Boolean saveVendor(Vendor vendor) {
+        if (vendor != null) {
+            vendorRepository.save(vendor);
+            return true;
+        } else
+            return false;
+    }
 }
