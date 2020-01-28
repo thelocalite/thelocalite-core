@@ -57,3 +57,57 @@ INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_spec
 INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('5', '8', 23);
 INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('4', '9', 23);
 INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('5', '10', 23);
+
+
+-- Service
+insert into `localite`.`service` (`service_id`,`description`,`image_url`,`name`) VALUES (default,'Get Plumbers Near You for services at best prices. Book Now! Best Plumbing Services near you','https://raw.githubusercontent.com/thelocalite/localite-ng/master/src/assets/images/services/plumber.jpe','Plumber');
+insert into `localite`.`service` (`service_id`,`description`,`image_url`,`name`) VALUES (default,'Get Maid Near You for services at best prices. Book Now! Best Maid Services near you','https://raw.githubusercontent.com/thelocalite/localite-ng/master/src/assets/images/services/maid.jpe','Maid');
+insert into `localite`.`service` (`service_id`,`description`,`image_url`,`name`) VALUES (default,'Get Painter  Near You for services at best prices. Book Now! Best Painter  Services near you','https://raw.githubusercontent.com/thelocalite/localite-ng/master/src/assets/images/services/painting.jpe','Painter');
+insert into `localite`.`service` (`service_id`,`description`,`image_url`,`name`) VALUES (default,'Get Electrician Near You for services at best prices. Book Now! Best Electrician Services near you','https://raw.githubusercontent.com/thelocalite/localite-ng/master/src/assets/images/services/electrician.jpe','Electrician');
+insert into `localite`.`service` (`service_id`,`description`,`image_url`,`name`) VALUES (default,'Get Beautician Near You for services at best prices. Book Now! Best Beautician Services near you','https://raw.githubusercontent.com/thelocalite/localite-ng/master/src/assets/images/services/beautician.jpg','Beautician');
+insert into `localite`.`service` (`service_id`,`description`,`image_url`,`name`) VALUES (default,'Get BabySitter Near You for services at best prices. Book Now! Best BabySitter Services near you','https://raw.githubusercontent.com/thelocalite/localite-ng/master/src/assets/images/services/babysitter.jpg','BabySitter');
+
+-- technician
+   -- plumber
+insert into `localite`.`technician` (`id`,`address`,`contact`,`first_name`,`last_name`,`service_id`) VALUES (default,'pune','789456','sonali','mandloi',1);
+insert into `localite`.`technician` (`id`,`address`,`contact`,`first_name`,`last_name`,`service_id`) VALUES (default,'pune','123456','divya','N',1);
+insert into `localite`.`technician` (`id`,`address`,`contact`,`first_name`,`last_name`,`service_id`) VALUES (default,'pune','456123','aditya','tadepalli',1);
+insert into `localite`.`technician` (`id`,`address`,`contact`,`first_name`,`last_name`,`service_id`) VALUES (default,'pune','753159','venkatesh','ransingh',1);
+insert into `localite`.`technician` (`id`,`address`,`contact`,`first_name`,`last_name`,`service_id`) VALUES (default,'pune','125883','tanmay','Bindal',1);
+
+--  maid
+
+insert into `localite`.`technician` (`id`,`address`,`contact`,`first_name`,`last_name`,`service_id`) VALUES (default,'mumbai','789456','sudha','gupta',2);
+insert into `localite`.`technician` (`id`,`address`,`contact`,`first_name`,`last_name`,`service_id`) VALUES (default,'pune','123456','jahnvi','vaidhya',2);
+insert into `localite`.`technician` (`id`,`address`,`contact`,`first_name`,`last_name`,`service_id`) VALUES (default,'mumbai','456123','aditi','sharma',2);
+insert into `localite`.`technician` (`id`,`address`,`contact`,`first_name`,`last_name`,`service_id`) VALUES (default,'pune','753159','riddhi','tripati',2);
+insert into `localite`.`technician` (`id`,`address`,`contact`,`first_name`,`last_name`,`service_id`) VALUES (default,'pune','125883','mahima','mangle',2);
+
+
+ -- painter
+ insert into `localite`.`technician` (`id`,`address`,`contact`,`first_name`,`last_name`,`service_id`) VALUES (default,'pune','223456','divya','N',3);
+insert into `localite`.`technician` (`id`,`address`,`contact`,`first_name`,`last_name`,`service_id`) VALUES (default,'pune','456123','aditya','tadepalli',3);
+insert into `localite`.`technician` (`id`,`address`,`contact`,`first_name`,`last_name`,`service_id`) VALUES (default,'pune','753159','riddhi','tripati',3);
+insert into `localite`.`technician` (`id`,`address`,`contact`,`first_name`,`last_name`,`service_id`) VALUES (default,'pune','125883','mahima','mangle',3);
+insert into `localite`.`technician` (`id`,`address`,`contact`,`first_name`,`last_name`,`service_id`) VALUES (default,'pune','789456','sonali','mandloi',3);
+
+ -- electrician
+ insert into `localite`.`technician` (`id`,`address`,`contact`,`first_name`,`last_name`,`service_id`) VALUES (default,'pune','223456','john','doe',4);
+insert into `localite`.`technician` (`id`,`address`,`contact`,`first_name`,`last_name`,`service_id`) VALUES (default,'pune','456123','shubham','joshi',4);
+insert into `localite`.`technician` (`id`,`address`,`contact`,`first_name`,`last_name`,`service_id`) VALUES (default,'pune','753159','rahul','verma',4);
+insert into `localite`.`technician` (`id`,`address`,`contact`,`first_name`,`last_name`,`service_id`) VALUES (default,'pune','125883','raj','malhotra',4);
+insert into `localite`.`technician` (`id`,`address`,`contact`,`first_name`,`last_name`,`service_id`) VALUES (default,'pune','789456','simran','sehgal',4);
+
+-- Beautician
+ insert into `localite`.`technician` (`id`,`address`,`contact`,`first_name`,`last_name`,`service_id`) VALUES (default,'pune','223456','divya','N',5);
+insert into `localite`.`technician` (`id`,`address`,`contact`,`first_name`,`last_name`,`service_id`) VALUES (default,'pune','456123','nikita','palli',5);
+insert into `localite`.`technician` (`id`,`address`,`contact`,`first_name`,`last_name`,`service_id`) VALUES (default,'pune','753159','rahi','wakode',5);
+insert into `localite`.`technician` (`id`,`address`,`contact`,`first_name`,`last_name`,`service_id`) VALUES (default,'pune','125883','renu','mangle',5);
+insert into `localite`.`technician` (`id`,`address`,`contact`,`first_name`,`last_name`,`service_id`) VALUES (default,'pune','789456','sweeta','ghote',5);
+
+ -- Baby Sitter
+ insert into `localite`.`technician` (`id`,`address`,`contact`,`first_name`,`last_name`,`service_id`) VALUES (default,'pune','223456','ankshka','kolte',6);
+insert into `localite`.`technician` (`id`,`address`,`contact`,`first_name`,`last_name`,`service_id`) VALUES (default,'pune','456123','ruchi','joshi',6);
+insert into `localite`.`technician` (`id`,`address`,`contact`,`first_name`,`last_name`,`service_id`) VALUES (default,'pune','753159','Shripriya','verma',6);
+insert into `localite`.`technician` (`id`,`address`,`contact`,`first_name`,`last_name`,`service_id`) VALUES (default,'pune','125883','rakhi','sehgal',6);
+insert into `localite`.`technician` (`id`,`address`,`contact`,`first_name`,`last_name`,`service_id`) VALUES (default,'pune','789456','simran','rajput',6);
