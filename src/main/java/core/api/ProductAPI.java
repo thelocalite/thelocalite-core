@@ -141,14 +141,21 @@ public class ProductAPI {
      */
 
     @GetMapping("/productNames")
-    List<String> getProductNames() {
+    Map<String, String> getProductNames() {
 
-        // Creates empty list to populate
-        List<String> productNames = new ArrayList<>();
+        // Creates empty map to populate
+        Map<String, String> productNames = new HashMap<>();
 
-        // TODO Get All Product Names
+        // Gets all products
+        List<Product> allProducts = productVendorService.getAllProducts();
 
-        // Return search result
+        // Populates the Map
+        for (Product product : allProducts) {
+            String img = product.getImageUrl().toString();
+            productNames.put(product.getName(), img);
+        }
+
+        // Returns the populated map
         return productNames;
     }
 
