@@ -18,7 +18,7 @@ public class LoggerApsect {
 
     private final Logger log = LoggerFactory.getLogger(this.getClass());
 
-    @Pointcut("within(core..*.*)")
+    @Pointcut("within(core.api..*.*)")
     public void definePackagePointcuts(){
         // To be left empty
     }

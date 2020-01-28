@@ -13,6 +13,9 @@ use localite;
 -- select * from vendor;
 -- select * from vendor;
 
+-- INSERT INTO `localite`.`roles` (`name`) VALUES ('ROLE_USER');
+-- INSERT INTO `localite`.`roles` (`name`) VALUES ('ROLE_ADMIN');
+
 -- Vendors
 
 INSERT INTO `localite`.`vendor` ( `description`, `image_url`, `name`) VALUES ( 'Daily Groceries', 'https://raw.githubusercontent.com/thelocalite/localite-ng/master/src/assets/images/store/more.png', 'More Store');
