@@ -8,6 +8,8 @@ import java.util.*;
 import core.model.products.*;
 import core.service.ProductVendorService;
 
+import org.apache.commons.codec.language.Soundex;
+
 /**
  * Product Rest API Controller
  */
@@ -60,17 +62,23 @@ public class ProductAPI {
      */
 
     @GetMapping("/search/{searchTerm}")
-    List<Product> searchProducts(@PathVariable("searchTerm") String searchTerm) {
+    Set<Product> searchProducts(@PathVariable("searchTerm") String searchTerm) {
 
         // Creates empty list to populate
-        List<Product> products = new ArrayList<>();
+        Set<Product> products = new HashSet<>();
 
-        // TODO Search Logic
+        // Search Logic
         List<Product> allProducts = productVendorService.getAllProducts();
 
+        // Soundex Logic
+        Soundex soundex = new Soundex();
         for (Product product : allProducts) {
-            if (product.getName().toLowerCase().contains(searchTerm.toLowerCase()))
-                products.add(product);
+            for (String productword : product.getName().split("\\s+")) {
+                for (String searchTermword : searchTerm.split("\\s+")) {
+                    if (soundex.encode(productword).equals(soundex.encode(searchTermword)))
+                        products.add(product);
+                }
+            }
         }
 
         // Return search result
