@@ -125,4 +125,13 @@ public class ProductAPI {
         return productNames;
     }
 
+    // Saves product from form data using requestbody
+    @PostMapping("/add")
+    String addProduct(@RequestBody Product product) {
+        if (productVendorService.saveProduct(product))
+            return "\"Response\":\"Added Product\"";
+        else
+            return "Error: Product not saved!";
+    }
+
 }
