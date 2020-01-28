@@ -1,5 +1,16 @@
 package core.security.data;
 
+/**
+ * This is the service layer for Spring security module.
+ * Primarily used to fetch user details from a database.
+ * 
+ * It overrides the loadUserByUsername for fetching user details from the database using the username.
+ * 
+ * Load user by username should return a valid username (in our case email),
+ * 		without which the JWT token check will fail
+ */
+
+
 import java.util.ArrayList;
 
 import org.springframework.security.core.userdetails.User;

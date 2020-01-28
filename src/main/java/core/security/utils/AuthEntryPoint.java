@@ -1,9 +1,9 @@
-package core.security;
-/*
-This class will extend Spring's AuthenticationEntryPoint class 
-and override its method commence. 
-It rejects every unauthenticated request and send error code 401
-*/
+package core.security.utils;
+/**
+ * This class will extend Spring's AuthenticationEntryPoint class 
+ * and override its method commence. 
+ * It rejects every unauthenticated request and send error code 401
+ */
 
 import java.io.IOException;
 import java.io.Serializable;
@@ -16,9 +16,9 @@ import org.springframework.security.web.AuthenticationEntryPoint;
 import org.springframework.stereotype.Component;
 
 @Component
-public class JwtAuthEntryPoint implements AuthenticationEntryPoint, Serializable {
+public class AuthEntryPoint implements AuthenticationEntryPoint, Serializable {
 
-	private static final long serialVersionUID = -7858869558953243875L;
+	private static final long serialVersionUID = 1L;
 
 	@Override
 	public void commence(HttpServletRequest request, HttpServletResponse response,

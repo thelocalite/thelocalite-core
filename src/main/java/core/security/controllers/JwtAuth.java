@@ -14,13 +14,20 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import core.security.data.AuthDetailsService;
-import core.security.jwt.JwtTokenUtil;
-import core.security.payloads.JwtRequest;
-import core.security.payloads.JwtResponse;
+import core.security.utils.JwtTokenUtil;
+import core.security.payload.JwtRequest;
+import core.security.payload.JwtResponse;
 
-/*
-Expose a POST API /authenticate using the JwtAuthenticationController. The POST API gets username and password in the body- Using Spring Authentication Manager we authenticate the username and password.If the credentials are valid, a JWT token is created using the JWTTokenUtil and provided to the client.
-*/
+/**
+ * Expose a POST API /authenticate.
+ * The POST API gets username and password in the body/
+ * Using Spring Authentication Manager we authenticate the username and password.
+ * If the credentials are valid, a JWT token is created using the JWTTokenUtil 
+ * and provided to the client.
+ * 
+ * Note: This controller is not being used, as we are authenticating from NodeJS
+ */
+
 @RestController
 @CrossOrigin
 public class JwtAuth {

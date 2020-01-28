@@ -1,8 +1,8 @@
 package core.security.config;
 
 /*
-	This class extends the WebSecurityConfigurerAdapter is a convenience class 
-	that allows customization to both WebSecurity and HttpSecurity.
+	This class extends the WebSecurityConfigurerAdapter
+	allows customization to both WebSecurity and HttpSecurity.
 */
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -19,8 +19,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
-import core.security.JwtAuthEntryPoint;
-import core.security.controllers.JwtRequestFilter;
+import core.security.utils.*;
 
 @Configuration
 @EnableWebSecurity
@@ -28,13 +27,13 @@ import core.security.controllers.JwtRequestFilter;
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
 	@Autowired
-	private JwtAuthEntryPoint jwtAuthenticationEntryPoint;
+	private AuthEntryPoint jwtAuthenticationEntryPoint;
 
 	@Autowired
 	private UserDetailsService jwtUserDetailsService;
 
 	@Autowired
-	private JwtRequestFilter jwtRequestFilter;
+	private RequestFilter jwtRequestFilter;
 
 	@Autowired
 	public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
@@ -60,7 +59,11 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 		// We don't need CSRF for this example
 		httpSecurity.csrf().disable()
 				// dont authenticate this particular request
-				.authorizeRequests().antMatchers("/authenticate").permitAll().
+				.authorizeRequests()
+				.antMatchers("/product/**").permitAll()
+				.antMatchers("/services/**").permitAll()
+				.antMatchers("/vendor/**").permitAll()
+				.antMatchers("/authenticate").permitAll().
 				// all other requests need to be authenticated
 				anyRequest().authenticated().and().
 				// make sure we use stateless session; session won't be used to
