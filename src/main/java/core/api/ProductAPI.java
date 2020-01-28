@@ -56,9 +56,31 @@ public class ProductAPI {
     }
 
     /**
-     * Search API
+     * Smart* Search API
      * 
      * Takes in query for product and returns search results
+     * 
+     * Now Implements Soundex :D
+     * 
+     * Soundex is an algorithm invented 100 years ago (between 1918-1922) and used
+     * to relate similar sounding names
+     * 
+     * Uses the Apache Commons Codec Library to import the encoding functionality
+     * 
+     * The Soundex object encodes a string into a Soundex value which is then
+     * compared to another string encoded into a Soundex value using the equals()
+     * and encode() method
+     * 
+     * Since the strings in the search term and the product name could be more than
+     * one word, we break up the strings into individual words using split() method
+     * of String object We iterate through every combination and add the product to
+     * the Collection if matched
+     * 
+     * Another issue was that during the iteration, multiple matches were being
+     * found, so the arraylist was being loaded with duplicate product objects. The
+     * Solution was to use a Set instead of a List
+     * 
+     * The API now returns a HashSet instead of an ArrayList
      */
 
     @GetMapping("/search/{searchTerm}")
