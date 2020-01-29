@@ -33,6 +33,12 @@ public class ProductAPI {
         return productVendorService.getProductById(productId);
     }
 
+    // Gets Price for Product and Vendor combination
+    @GetMapping("/price/{productId}/{vendorId}")
+    Double getPriceByProductVendorId(@PathVariable("productId") int productId, @PathVariable("vendorId") int vendorId) {
+        return productVendorService.getPriceByProductVendorIds(productId, vendorId);
+    }
+
     // Gets all products for a vendor
     @GetMapping("/vendor/{vendorId}")
     List<Product> getAllProductsOfAVendor(@PathVariable("vendorId") int vendorId) {

@@ -40,26 +40,26 @@ INSERT INTO `localite`.`product` ( `brand`, `category`, `description`, `image_ur
 
 -- Product_Vendor
 
-INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('1', '1', 23);
-INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('1', '2', 23);
+INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('1', '1', 21);
+INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('1', '2', 22);
 INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('1', '3', 23);
-INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('1', '4', 23);
-INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('2', '5', 23);
-INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('2', '6', 23);
-INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('2', '7', 23);
-INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('3', '8', 23);
-INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('3', '9', 23);
-INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('3', '10', 23);
-INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('4', '1', 23);
-INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('5', '2', 23);
-INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('4', '3', 23);
-INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('5', '4', 23);
-INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('4', '5', 23);
-INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('5', '6', 23);
-INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('4', '7', 23);
-INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('5', '8', 23);
-INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('4', '9', 23);
-INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('5', '10', 23);
+INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('1', '4', 24);
+INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('2', '5', 25);
+INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('2', '6', 26);
+INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('2', '7', 27);
+INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('3', '8', 28);
+INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('3', '9', 29);
+INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('3', '10', 30);
+INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('4', '1', 31);
+INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('5', '2', 32);
+INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('4', '3', 33);
+INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('5', '4', 34);
+INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('4', '5', 35);
+INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('5', '6', 36);
+INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('4', '7', 37);
+INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('5', '8', 38);
+INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('4', '9', 39);
+INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('5', '10', 40);
 
 
 -- Service
@@ -115,7 +115,7 @@ insert into `localite`.`technician` (`id`,`address`,`contact`,`first_name`,`last
 insert into `localite`.`technician` (`id`,`address`,`contact`,`first_name`,`last_name`,`service_id`) VALUES (default,'pune','125883','rakhi','sehgal',6);
 insert into `localite`.`technician` (`id`,`address`,`contact`,`first_name`,`last_name`,`service_id`) VALUES (default,'pune','789456','simran','rajput',6);
 
-------Customer
+-- Customer
 INSERT INTO `localite`.`customer` (`id`,`email`,`name`) VALUES (default,'divya@gmail.com','Divya');
 INSERT INTO `localite`.`customer` (`id`,`email`,`name`) VALUES (default,'venky@gmail.com','Venkatesh');
 INSERT INTO `localite`.`customer` (`id`,`email`,`name`) VALUES (default,'aditya@gmail.com','Aditya');
@@ -123,7 +123,7 @@ INSERT INTO `localite`.`customer` (`id`,`email`,`name`) VALUES (default,'sonali@
 INSERT INTO `localite`.`customer` (`id`,`email`,`name`) VALUES (default,'tanmay@gmail.com','Tanmay');
 
 
--------Cart
+-- Cart
 INSERT INTO `localite`.`cart` (`id`,`price`,`quantity`,`saved_for_later`,`customer_id`,`product_id`,`vendor_id`) VALUES (default,'35','1',false,'3','10','5');
 INSERT INTO `localite`.`cart` (`id`,`price`,`quantity`,`saved_for_later`,`customer_id`,`product_id`,`vendor_id`) VALUES (default,'15','2',false,'3','2','5');
 INSERT INTO `localite`.`cart` (`id`,`price`,`quantity`,`saved_for_later`,`customer_id`,`product_id`,`vendor_id`) VALUES (default,'20','2',false,'3','4','5');

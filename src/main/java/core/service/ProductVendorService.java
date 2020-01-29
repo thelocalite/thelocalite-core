@@ -66,4 +66,9 @@ public class ProductVendorService {
         } else
             return false;
     }
+
+    // Return Vendor Specific Product Price by Vendor and Product Ids
+    public Double getPriceByProductVendorIds(int productId, int vendorId) {
+        return productRepository.getPrice(productId, vendorId);
+    }
 }
