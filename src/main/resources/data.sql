@@ -114,3 +114,18 @@ insert into `localite`.`technician` (`id`,`address`,`contact`,`first_name`,`last
 insert into `localite`.`technician` (`id`,`address`,`contact`,`first_name`,`last_name`,`service_id`) VALUES (default,'pune','753159','Shripriya','verma',6);
 insert into `localite`.`technician` (`id`,`address`,`contact`,`first_name`,`last_name`,`service_id`) VALUES (default,'pune','125883','rakhi','sehgal',6);
 insert into `localite`.`technician` (`id`,`address`,`contact`,`first_name`,`last_name`,`service_id`) VALUES (default,'pune','789456','simran','rajput',6);
+
+------Customer
+INSERT INTO `localite`.`customer` (`id`,`email`,`name`) VALUES (default,'divya@gmail.com','Divya');
+INSERT INTO `localite`.`customer` (`id`,`email`,`name`) VALUES (default,'venky@gmail.com','Venkatesh');
+INSERT INTO `localite`.`customer` (`id`,`email`,`name`) VALUES (default,'aditya@gmail.com','Aditya');
+INSERT INTO `localite`.`customer` (`id`,`email`,`name`) VALUES (default,'sonali@gmail.com','Sonali');
+INSERT INTO `localite`.`customer` (`id`,`email`,`name`) VALUES (default,'tanmay@gmail.com','Tanmay');
+
+
+-------Cart
+INSERT INTO `localite`.`cart` (`id`,`price`,`quantity`,`saved_for_later`,`customer_id`,`product_id`,`vendor_id`) VALUES (default,'35','1',false,'3','10','5');
+INSERT INTO `localite`.`cart` (`id`,`price`,`quantity`,`saved_for_later`,`customer_id`,`product_id`,`vendor_id`) VALUES (default,'15','2',false,'3','2','5');
+INSERT INTO `localite`.`cart` (`id`,`price`,`quantity`,`saved_for_later`,`customer_id`,`product_id`,`vendor_id`) VALUES (default,'20','2',false,'3','4','5');
+INSERT INTO `localite`.`cart` (`id`,`price`,`quantity`,`saved_for_later`,`customer_id`,`product_id`,`vendor_id`) VALUES (default,'25','3',true,'3','6','5');
+INSERT INTO `localite`.`cart` (`id`,`price`,`quantity`,`saved_for_later`,`customer_id`,`product_id`,`vendor_id`) VALUES (default,'35','1',true,'3','8','5');

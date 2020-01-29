@@ -63,6 +63,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 				.antMatchers("/product/**").permitAll()
 				.antMatchers("/services/**").permitAll()
 				.antMatchers("/vendor/**").permitAll()
+				.antMatchers("/cart/**").permitAll()
 				.antMatchers("/authenticate").permitAll().
 				// all other requests need to be authenticated
 				anyRequest().authenticated().and().

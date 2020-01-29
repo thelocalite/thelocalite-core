@@ -59,7 +59,7 @@ public class CustomerOrder {
         this.vendor = vendor;
         this.customer = customer;
         this.product = product;
-        this.price = productRepository.getPrice(product.getId(), vendor.getId()).getVendorSpecificPrice();
+        this.price = productRepository.getPrice(product.getId(), vendor.getId());
         this.quantity = quantity;
         this.timeStamp = date;
     }

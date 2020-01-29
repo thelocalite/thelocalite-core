@@ -6,13 +6,15 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
-import javax.persistence.Transient;
 
-import org.springframework.beans.factory.annotation.Autowired;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+
 
 import core.model.products.Product;
 import core.model.products.Vendor;
-import core.repository.products.ProductRepository;
+
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -26,53 +28,81 @@ import lombok.Setter;
 @Entity
 public class Cart {
 
-    @Autowired
-    @Transient
-    ProductRepository productRepository;
+    // @JsonIgnore
+    // @Autowired
+    // @Transient
+    // ProductRepository productRepository;
 
     @Id
     @Getter @Setter
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    // ToDo map to User
+    
+    @JsonIgnore
     @ManyToOne
     @JoinColumn
     @Getter @Setter
     private Customer customer;
 
 
+    @JsonIgnore
     @ManyToOne
     @JoinColumn
     @Getter @Setter
     private Vendor vendor;
+
 
     @ManyToOne
     @JoinColumn
     @Getter @Setter
     private Product product;
     
-    @Transient
+    @Getter
+    @Setter
     private Double price;
     
     @Getter @Setter
     private int quantity;
 
+    @JsonIgnore
     @Getter @Setter
     private boolean savedForLater;
 
-    public Cart(int id, Customer customer, Vendor vendor, Product product, int quantity) {
+   
+
+
+    public Cart(int id, Customer customer, Vendor vendor, Product product, Double price,int quantity) {
+        this.id = id;
         this.customer = customer;
         this.vendor = vendor;
         this.product = product;
+        this.price =  price;
         this.quantity = quantity;
         this.savedForLater = false;
     }
+
     
 
-    public Double getPrice() {
-        return productRepository.getPrice(product.getId(), vendor.getId()).getVendorSpecificPrice();
-    }
+    // public Double getNewPrice() {
+    //     return productRepository.getPrice(this.product.getId(), this.vendor.getId()).getVendorSpecificPrice();
+    // }
     
+    // public void setPrice(){
+    //      this.price =  product.getMrp();
+    // }
+
+
+    @Override
+    public String toString() {
+        return "{" +
+            ", id='" + getId() + "'" +
+            ", product='" + getProduct() + "'" +
+            ", price='" + getPrice() + "'" +
+            ", quantity='" + getQuantity() + "'" +
+           
+            "}";
+    }
+
 
 }
