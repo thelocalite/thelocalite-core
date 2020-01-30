@@ -14,11 +14,11 @@ public class JwtRequest implements Serializable {
     
 	private static final long serialVersionUID = 1L;
 
-	private String username;
+	private String email;
 	private String password;
 
 	public JwtRequest(String username, String password) {
-		this.setUsername(username);
+		this.setEmail(username);
 		this.setPassword(password);
 	}
 }
