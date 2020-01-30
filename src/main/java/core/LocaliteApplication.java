@@ -34,6 +34,23 @@ public class LocaliteApplication {
   // }
 
   /*
+    get user id
+
+    user = userRepo.getuserbyid(id)
+    user.getCart().add(red.bd)
+
+
+
+    cart = user.getCart() 
+    
+    iterate - cI of cart{
+      if(cI.getId() == req.cartItemId){
+        cart.remove(cI)
+      }
+    }
+    userRepo.save(user)
+
+  /*
    * 
    * public void prodTest() {
    * 
