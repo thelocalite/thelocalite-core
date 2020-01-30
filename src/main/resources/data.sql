@@ -14,14 +14,15 @@ use localite;
 -- select * from vendor;
 
 -- Auth
-INSERT INTO `localite`.`auth` (`name`, `email`, `password`, `role`, `reset_password_token`, `reset_password_token_expiry`) 
+
+INSERT INTO `localite`.`auth` (`name`, `username`, `email`, `password`, `role`, `reset_password_token`, `reset_password_token_expiry`, `is_blocked`, `is_active`) 
 VALUES 
-('Vijaya Aditya Tadepalli', 'vatadepalli@hotmail.com', '$2a$10$V1I8.04gHvQGTbqsnDWXb.4i0fRJMXb9mwrjod75IKBStOeq7avf.', 'ROLE_USER', ' ', '1579756777448'),
-('Kapil Anirudh', 'katadepalli@hotmail.com', '$2a$10$wgxwTqUb2tl7hyEFyPHZI.1Og..CeHuYX.WttKasdtpSWV18k2KeW', 'ROLE_ADMIN', NULL, NULL),
-('Super Human', 'superhuman@hotmail.com', '$2a$10$2FGUagQyi0XLwNpBDcsoz.Em9lrAkCx60Hmyu6ovJXK0Z7lhITeOe', 'ROLE_USER', NULL, NULL),
-(' Tom', 'tom.pom@gmail.com', '$2a$10$KS76cWlKHUWJfHOUdKdi4uzy65IebWKga/Dy1RkF.4S89wCLODNWK', 'ROLE_USER', NULL, NULL),
-('Tanmay', '10maycdac@gmail.com', '$2a$10$3FYN60hHjPqcwTNQIzlg0euVcOdfkdz8ZruEAZDCJQEKnnC88ZQaW', 'ROLE_USER', ' ', '1580325010927'),
-('echo', 'katadepalli@gmail.com', '$2a$10$IDu.d4CUrh91LeyqWEqb5uHEDF6vhx/UaunDPfuJRZulLlVzjcdaa', 'ROLE_USER', NULL, NULL);
+('Vijaya Aditya Tadepalli', 'vatadepalli@hotmail.com', 'vatadepalli@hotmail.com', '$2a$10$V1I8.04gHvQGTbqsnDWXb.4i0fRJMXb9mwrjod75IKBStOeq7avf.', 'ROLE_USER', ' ', '1579756777448', FALSE, TRUE),
+('Kapil Anirudh', 'katadepalli@hotmail.com', 'katadepalli@hotmail.com', '$2a$10$wgxwTqUb2tl7hyEFyPHZI.1Og..CeHuYX.WttKasdtpSWV18k2KeW', 'ROLE_ADMIN', NULL, NULL, FALSE, TRUE),
+('Super Human', 'superhuman@hotmail.com', 'superhuman@hotmail.com', '$2a$10$2FGUagQyi0XLwNpBDcsoz.Em9lrAkCx60Hmyu6ovJXK0Z7lhITeOe', 'ROLE_USER', NULL, NULL, FALSE, TRUE),
+(' Tom', 'tom.pom@gmail.com', 'tom.pom@gmail.com', '$2a$10$KS76cWlKHUWJfHOUdKdi4uzy65IebWKga/Dy1RkF.4S89wCLODNWK', 'ROLE_USER', NULL, NULL, FALSE, TRUE),
+('Tanmay', '10maycdac@gmail.com', '10maycdac@gmail.com', '$2a$10$3FYN60hHjPqcwTNQIzlg0euVcOdfkdz8ZruEAZDCJQEKnnC88ZQaW', 'ROLE_USER', ' ', '1580325010927', FALSE, TRUE),
+('echo', 'katadepalli@gmail.com', 'katadepalli@gmail.com', '$2a$10$IDu.d4CUrh91LeyqWEqb5uHEDF6vhx/UaunDPfuJRZulLlVzjcdaa', 'ROLE_USER', NULL, NULL, FALSE, TRUE);
 
 
 -- Vendors

@@ -1,5 +1,9 @@
 package core.security.models;
 
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
@@ -10,7 +14,11 @@ import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 
 import org.hibernate.annotations.NaturalId;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
 
+import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -22,7 +30,7 @@ import lombok.Setter;
  * Auth
  */
 @Entity
-public class Auth {
+public class Auth implements UserDetails {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -43,9 +51,7 @@ public class Auth {
     private String password;
 
     @Enumerated(EnumType.STRING)
-    @NaturalId
     private Role role;
-
 
     // Reset Token Related
     private String reset_password_token;
@@ -59,6 +65,57 @@ public class Auth {
     // Profile
     private String imageUrl;
     private Boolean isActive;
+    private Boolean isBlocked;
 
+    @Override
+    public Collection<? extends GrantedAuthority> getAuthorities() {
+
+        List<GrantedAuthority> authorities = new ArrayList<GrantedAuthority>();
+        authorities.add(new SimpleGrantedAuthority(this.role.name()));
+        return authorities;
+    }
+
+
+    @Override
+    public boolean isAccountNonExpired() {
+        return this.isActive;
+    }
+
+    @Override
+    public boolean isAccountNonLocked() {
+        return !this.isBlocked;
+    }
+
+    @Override
+    public boolean isCredentialsNonExpired() {
+        return true;
+    }
+
+    @Override
+    public boolean isEnabled() {
+        return !this.isBlocked;
+    }
+
+
+
+    @Override
+    public String toString() {
+        return "{" +
+            " id='" + getId() + "'" +
+            ", name='" + getName() + "'" +
+            ", username='" + getUsername() + "'" +
+            ", email='" + getEmail() + "'" +
+            ", password='" + getPassword() + "'" +
+            ", role='" + getRole() + "'" +
+            ", reset_password_token='" + getReset_password_token() + "'" +
+            ", reset_password_token_expiry='" + getReset_password_token_expiry() + "'" +
+            ", address='" + getAddress() + "'" +
+            ", latitude='" + getLatitude() + "'" +
+            ", longitude='" + getLongitude() + "'" +
+            ", imageUrl='" + getImageUrl() + "'" +
+            ", isActive='" + isActive + "'" +
+            ", isBlocked='" + isBlocked + "'" +
+            "}";
+    }
 
 }

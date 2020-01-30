@@ -63,6 +63,8 @@ public class JwtTokenUtil implements Serializable {
 
 	// generate token for user
 	public String generateToken(UserDetails userDetails) {
+		System.out.println("***Generating Token: generateToken *****");
+		System.out.println(userDetails);
 		Map<String, Object> claims = new HashMap<>();
 		return doGenerateToken(claims, userDetails.getUsername());
 	}
@@ -70,6 +72,9 @@ public class JwtTokenUtil implements Serializable {
 	// signing the token
 	// We don't use this *************, but this can be used as a fallack authentication server
 	private String doGenerateToken(Map<String, Object> claims, String subject) {
+		System.out.println("***Generating Token: doGenerateToken *****");
+		System.out.println(claims);
+		System.out.println(subject);
 
 		return Jwts.builder().setClaims(claims).setSubject(subject).setIssuedAt(new Date(System.currentTimeMillis()))
 				.setExpiration(new Date(System.currentTimeMillis() + JWT_TOKEN_VALIDITY * 1000))

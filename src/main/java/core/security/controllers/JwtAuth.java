@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import core.security.data.AuthDetailsService;
+import core.security.data.AuthService;
 import core.security.utils.JwtTokenUtil;
 import core.security.payload.JwtRequest;
 import core.security.payload.JwtResponse;
@@ -39,10 +39,13 @@ public class JwtAuth {
 	private JwtTokenUtil jwtTokenUtil;
 
 	@Autowired
-	private AuthDetailsService userDetailsService;
+	private AuthService userDetailsService;
 
 	@RequestMapping(value = "/authenticate", method = RequestMethod.POST)
 	public ResponseEntity<?> createAuthenticationToken(@RequestBody JwtRequest authenticationRequest) throws Exception {
+		System.out.println("****** GET: /authenticate");
+		System.out.println(authenticationRequest.getUsername());
+		System.out.println(authenticationRequest.getPassword());
 
 		authenticate(authenticationRequest.getUsername(), authenticationRequest.getPassword());
 
@@ -54,6 +57,9 @@ public class JwtAuth {
 	}
 
 	private void authenticate(String username, String password) throws Exception {
+		System.out.println("****** Autenticating *********");
+		System.out.println(username);
+		System.out.println(password);
 		try {
 			authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(username, password));
 		} catch (DisabledException e) {

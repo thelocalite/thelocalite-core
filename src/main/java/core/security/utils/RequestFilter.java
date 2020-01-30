@@ -23,7 +23,7 @@ import org.springframework.security.web.authentication.WebAuthenticationDetailsS
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
 
-import core.security.data.AuthDetailsService;
+import core.security.data.AuthService;
 import core.security.utils.JwtTokenUtil;
 import io.jsonwebtoken.ExpiredJwtException;
 
@@ -31,7 +31,7 @@ import io.jsonwebtoken.ExpiredJwtException;
 public class RequestFilter extends OncePerRequestFilter {
 
 	@Autowired
-	private AuthDetailsService jwtUserDetailsService;
+	private AuthService jwtUserDetailsService;
 
 	@Autowired
 	private JwtTokenUtil jwtTokenUtil;
@@ -47,6 +47,7 @@ public class RequestFilter extends OncePerRequestFilter {
 		// JWT Token is in the form "Bearer token". Remove Bearer word and get
 		// only the Token
 		if (requestTokenHeader != null && requestTokenHeader.startsWith("Bearer ")) {
+			System.out.println("********************************");
 			jwtToken = requestTokenHeader.substring(7);
 			try {
 				username = jwtTokenUtil.getUsernameFromToken(jwtToken);
@@ -58,6 +59,8 @@ public class RequestFilter extends OncePerRequestFilter {
 		} else {
 			logger.warn("JWT Token does not begin with Bearer String");
 		}
+		System.out.println(username);
+		System.out.println(jwtToken);
 
 		// Once we get the token validate it.
 		if (username != null && SecurityContextHolder.getContext().getAuthentication() == null) {
