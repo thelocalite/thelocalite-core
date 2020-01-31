@@ -8,6 +8,7 @@ import org.springframework.security.authentication.DisabledException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -30,6 +31,7 @@ import core.security.payload.JwtResponse;
 
 @RestController
 @CrossOrigin
+// @RequestMapping("/user")
 public class JwtAuth {
 
 	@Autowired
@@ -41,7 +43,7 @@ public class JwtAuth {
 	@Autowired
 	private AuthService userDetailsService;
 
-	@RequestMapping(value = "/authenticate", method = RequestMethod.POST)
+	@PostMapping("/authenticate")
 	public ResponseEntity<?> createAuthenticationToken(@RequestBody JwtRequest authenticationRequest) throws Exception {
 		System.out.println("****** GET: /authenticate");
 		System.out.println(authenticationRequest.getEmail());
@@ -68,4 +70,5 @@ public class JwtAuth {
 			throw new Exception("INVALID_CREDENTIALS", e);
 		}
 	}
+
 }

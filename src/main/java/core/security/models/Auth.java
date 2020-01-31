@@ -63,6 +63,8 @@ public class Auth implements UserDetails {
 
     // GeoLocation Related
     private String address;
+    private String contactNumber;
+
     private Integer latitude;
     private Integer longitude;
 
