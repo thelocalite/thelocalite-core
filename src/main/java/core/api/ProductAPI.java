@@ -174,4 +174,10 @@ public class ProductAPI {
             return "Error: Product not saved!";
     }
 
+    // Gets all Product Categories
+    @GetMapping("/getCategories")
+    List<String> getAllProductCategories() {
+        return productVendorService.getAllProductCategories();
+    }
+
 }

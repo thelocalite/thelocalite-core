@@ -2,6 +2,7 @@ package core.service;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.Set;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -71,4 +72,9 @@ public class ProductVendorService {
     public Double getPriceByProductVendorIds(int productId, int vendorId) {
         return productRepository.getPrice(productId, vendorId);
     }
+
+    // Return all Product Categories
+	public List<String> getAllProductCategories() {
+		return productRepository.getAllProductCategories();
+	}
 }
