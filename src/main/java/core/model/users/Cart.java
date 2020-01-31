@@ -1,5 +1,7 @@
 package core.model.users;
 
+import java.util.Objects;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -46,7 +48,7 @@ public class Cart {
     private Customer customer;
 
 
-    @JsonIgnore
+    // @JsonIgnore
     @ManyToOne
     @JoinColumn
     @Getter @Setter
@@ -65,7 +67,7 @@ public class Cart {
     @Getter @Setter
     private int quantity;
 
-    @JsonIgnore
+    
     @Getter @Setter
     private boolean savedForLater;
 
@@ -82,27 +84,40 @@ public class Cart {
         this.savedForLater = false;
     }
 
-    
-
-    // public Double getNewPrice() {
-    //     return productRepository.getPrice(this.product.getId(), this.vendor.getId()).getVendorSpecificPrice();
-    // }
-    
-    // public void setPrice(){
-    //      this.price =  product.getMrp();
-    // }
+   
 
 
     @Override
     public String toString() {
         return "{" +
-            ", id='" + getId() + "'" +
+            " id='" + getId() + "'" +
+            ", vendor='" + getVendor() + "'" +
             ", product='" + getProduct() + "'" +
             ", price='" + getPrice() + "'" +
             ", quantity='" + getQuantity() + "'" +
-           
+            ", savedForLater='" + isSavedForLater() + "'" +
             "}";
     }
 
+    
+ 
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == this)
+            return true;
+        if (!(o instanceof Cart)) {
+            return false;
+        }
+        Cart cart = (Cart) o;
+        return this.id == (cart.id) && Objects.equals(customer, cart.customer) && Objects.equals(vendor, cart.vendor) && Objects.equals(product, cart.product) && Objects.equals(price, cart.price) && quantity == cart.quantity && savedForLater == cart.savedForLater;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, customer, vendor, product, price, quantity, savedForLater);
+    }
+    
+  
 
 }

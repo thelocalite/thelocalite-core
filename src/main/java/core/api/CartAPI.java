@@ -8,7 +8,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+//import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import core.model.users.Cart;
@@ -74,5 +77,35 @@ public class CartAPI {
         return savedItems;
 
     }
+
+
+    @RequestMapping(value = "/cartItems/add/{userId}", method = RequestMethod.POST)
+    //@PostMapping(path = "/cartItems/add/{userId}", consumes = "application/json")
+    public void addCartItem(@RequestBody Cart cartItem,@PathVariable("userId") int userId) {
+        
+        cartService.addCartItem(cartItem,userId);
+
+    
+    }
+
+    @RequestMapping(value = "/savedItems/add/{userId}", method = RequestMethod.POST)
+    //@PostMapping(path = "/cartItems/add/{userId}", consumes = "application/json")
+    public void addSavedItem(@RequestBody Cart cartItem,@PathVariable("userId") int userId) {
+        
+        cartService.addSavedItem(cartItem,userId);
+
+    
+    }
+
+    @RequestMapping(value = "/cartItems/delete/{userId}", method = RequestMethod.POST)
+    //@PostMapping(path = "/cartItems/add/{userId}", consumes = "application/json")
+    public void deleteCartItem(@RequestBody Cart cartItem,@PathVariable("userId") int userId) {
+        
+        cartService.deleteFromCart(cartItem,userId);
+
+    
+    }
+
+    
  
 }    
