@@ -45,13 +45,14 @@ public class CartService {
     }
     
     /**
-     * Add to Cart API 
+     * Add to Cart API called in 2 cases :-
      * 
-     * 1) When adding a new cartItem into the cart
+     * 1) When adding a new cartItem into the Shopping Cart 
+     *    thereby into the cart table.
      * 
-     * 2)Adding to cart from 'Saved For Later'
-     *      * Which is essentially only changing the 'savedForLater' flag as false,
-     *        as it already exists in the cart table;
+     * 2)Adding to Shopping Cart from 'Saved For Later' items
+     *       i.e 'Saved For Later' item already exists in cart Table and we
+     *        essentially only change the 'savedForLater' flag as false.
      */
     public void addCartItem(Cart cartItem,int userId){
       boolean addFlag = false;
@@ -91,13 +92,14 @@ public class CartService {
       }
     }
     /**
-     * Add to SavedForLater API 
+     * Add to SavedForLater API called for 2 cases :-
      * 
-     * 1) When adding a new savedForLaterItem into the cart
+     * 1) When adding a new savedForLaterItem into the cart Table
+     *    savedForLater' Flag = true;
      * 
-     * 2)Adding to 'Saved For Later' from cart
-     *      * Which is essentially only changing the 'savedForLater' flag as true,
-     *        as it already exists in the cart table;
+     * 2)Adding to 'Saved For Later' from Shopping cart
+     *        i.e Shopping cart item already exists in cart Table and we
+     *        essentially only change the 'savedForLater' flag as true.
      */
 
 
@@ -139,6 +141,13 @@ public class CartService {
       }
     }
 
+    /**
+     * DeleteFromCart API is called whwnever one ants to delete/remove an Item
+     * from the cart table.
+     * 
+     * i.e the item could be either a Shopping Cart Item or a 'Saved For Later'
+     * item
+     */
     public void deleteFromCart(Cart cartItem,int userId){
       boolean deleteFlag = false;
       Optional<Customer> customerOptional = customerRepository.findById(userId);

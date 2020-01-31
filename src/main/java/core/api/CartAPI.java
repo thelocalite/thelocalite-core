@@ -30,7 +30,9 @@ public class CartAPI {
     @Autowired
     CartService cartService;
 
-    // Gets all Products
+    /**
+     * Get all Shopping Cart Items For a specific Customer
+     */
     @GetMapping("/cartItems/{customerId}")
     List<Cart> getAllCartProducts(@PathVariable("customerId") int customerId) {
 
@@ -55,7 +57,9 @@ public class CartAPI {
 
     
 
-    
+    /**
+     * Get all Saved For Later Items For a specific Customer
+     */
     @GetMapping("/savedItems/{customerId}")
     List<Cart> getAllSavedProducts(@PathVariable("customerId") int customerId) {
 
@@ -78,7 +82,10 @@ public class CartAPI {
 
     }
 
-
+    /**
+     * 
+     * Post Request For Addinng a Shopping Cart Item
+     */    
     @RequestMapping(value = "/cartItems/add/{userId}", method = RequestMethod.POST)
     //@PostMapping(path = "/cartItems/add/{userId}", consumes = "application/json")
     public void addCartItem(@RequestBody Cart cartItem,@PathVariable("userId") int userId) {
@@ -88,6 +95,10 @@ public class CartAPI {
     
     }
 
+    /**
+     * 
+     * Post Request For Addinng a Saved For Later Item
+     */ 
     @RequestMapping(value = "/savedItems/add/{userId}", method = RequestMethod.POST)
     //@PostMapping(path = "/cartItems/add/{userId}", consumes = "application/json")
     public void addSavedItem(@RequestBody Cart cartItem,@PathVariable("userId") int userId) {
@@ -97,6 +108,12 @@ public class CartAPI {
     
     }
 
+    /**
+     * 
+     * Request For Deleting from the cart table
+     * 
+     * Could be either a Shopping Cart Item or a Saved For Later Item
+     */ 
     @RequestMapping(value = "/cartItems/delete/{userId}", method = RequestMethod.POST)
     //@PostMapping(path = "/cartItems/add/{userId}", consumes = "application/json")
     public void deleteCartItem(@RequestBody Cart cartItem,@PathVariable("userId") int userId) {
