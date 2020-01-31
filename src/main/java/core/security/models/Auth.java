@@ -65,8 +65,8 @@ public class Auth implements UserDetails {
     private String address;
     private String contactNumber;
 
-    private Integer latitude;
-    private Integer longitude;
+    private Double latitude;
+    private Double longitude;
 
     // Profile
     private String imageUrl;

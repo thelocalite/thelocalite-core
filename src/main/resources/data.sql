@@ -26,6 +26,8 @@ VALUES
 
 
 -- Vendors
+-- INSERT INTO `localite`.`auth` (`address`, `contact_number`, `email`, `is_active`, `is_blocked`, `latitude`, `longitude`, `name`, `password`, `role`, `username`) 
+-- VALUES ('Merchant 1 Address', '8787787287', 'merchant1@gmail.com', TRUE, FALSE, b'rand', b'rand', b'Merchant 1', b'$2a$10$V1I8.04gHvQGTbqsnDWXb.4i0fRJMXb9mwrjod75IKBStOeq7avf.', b'ROLE_VENDOR', b'merchant1@gmail.com');
 
 INSERT INTO `localite`.`vendor` ( `description`, `image_url`, `name`) VALUES ( 'Daily Groceries', 'https://raw.githubusercontent.com/thelocalite/localite-ng/master/src/assets/images/store/more.png', 'More Store');
 INSERT INTO `localite`.`vendor` ( `description`, `image_url`, `name`) VALUES ( 'Medicines and health related products', 'https://raw.githubusercontent.com/thelocalite/localite-ng/master/src/assets/images/store/apollo.png', 'Apollo Pharmacy');
