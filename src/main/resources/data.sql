@@ -46,6 +46,17 @@ INSERT INTO `localite`.`product` ( `brand`, `category`, `description`, `image_ur
 INSERT INTO `localite`.`product` ( `brand`, `category`, `description`, `image_url`, `mrp`, `name`) VALUES ( 'The Coca-Cola Company', 'Beverages', 'Can 330ml', 'https://raw.githubusercontent.com/thelocalite/localite-ng/1cd2bdb4345c58f002b0e77dbd239704c5f6cf37/src/assets/images/product/coke-diet.png', '35', 'Coca Cola Diet');
 INSERT INTO `localite`.`product` ( `brand`, `category`, `description`, `image_url`, `mrp`, `name`) VALUES ( 'The Coca-Cola Company', 'Beverages', 'Can 330ml', 'https://raw.githubusercontent.com/thelocalite/localite-ng/1cd2bdb4345c58f002b0e77dbd239704c5f6cf37/src/assets/images/product/coke-original.png', '35', 'Coca Cola Original');
 
+INSERT INTO `localite`.`product` ( `brand`, `category`, `description`, `image_url`, `mrp`, `name`) VALUES ( 'Parachute', 'Household', 'Coconut Oil 200ml', 'https://raw.githubusercontent.com/thelocalite/localite-ng/6a7447c1ea9043e615e3052fb564a24b9f70a88b/src/assets/images/product/parachute.jpg', '40', 'Parachute Coconut Oil');
+INSERT INTO `localite`.`product` ( `brand`, `category`, `description`, `image_url`, `mrp`, `name`) VALUES ( 'Tide', 'Household', 'Detergent Powder 500gm', 'https://raw.githubusercontent.com/thelocalite/localite-ng/6a7447c1ea9043e615e3052fb564a24b9f70a88b/src/assets/images/product/tide.jpg', '50', 'Tide Detergent Powder');
+INSERT INTO `localite`.`product` ( `brand`, `category`, `description`, `image_url`, `mrp`, `name`) VALUES ( 'Vanish', 'Household', 'Detergent Booster 200gm', 'https://raw.githubusercontent.com/thelocalite/localite-ng/6a7447c1ea9043e615e3052fb564a24b9f70a88b/src/assets/images/product/vanish.jpg', '40', 'Vanish Detergent Booster');
+INSERT INTO `localite`.`product` ( `brand`, `category`, `description`, `image_url`, `mrp`, `name`) VALUES ( 'Vim', 'Household', 'Dishwash Liquid 200ml', 'https://raw.githubusercontent.com/thelocalite/localite-ng/6a7447c1ea9043e615e3052fb564a24b9f70a88b/src/assets/images/product/vim.jpg', '60', 'Vim Dishwash Liquid');
+INSERT INTO `localite`.`product` ( `brand`, `category`, `description`, `image_url`, `mrp`, `name`) VALUES ( 'Dettol', 'Household', 'Disinfectant 100ml', 'https://raw.githubusercontent.com/thelocalite/localite-ng/6a7447c1ea9043e615e3052fb564a24b9f70a88b/src/assets/images/product/dettol.jpg', '50', 'Dettol Disinfectant');
+INSERT INTO `localite`.`product` ( `brand`, `category`, `description`, `image_url`, `mrp`, `name`) VALUES ( 'Dabur', 'Food', 'Honey 200gm', 'https://raw.githubusercontent.com/thelocalite/localite-ng/6a7447c1ea9043e615e3052fb564a24b9f70a88b/src/assets/images/product/honey.jpg', '40', 'Dabur Honey');
+INSERT INTO `localite`.`product` ( `brand`, `category`, `description`, `image_url`, `mrp`, `name`) VALUES ( 'Kissan', 'Food', 'Mixed Fruit Jam 500gm', 'https://raw.githubusercontent.com/thelocalite/localite-ng/6a7447c1ea9043e615e3052fb564a24b9f70a88b/src/assets/images/product/jam.jpg', '70', 'Kissan Mixed Fruit Jam');
+INSERT INTO `localite`.`product` ( `brand`, `category`, `description`, `image_url`, `mrp`, `name`) VALUES ( 'Delmonte', 'Food', 'Ketchup 1l', 'https://raw.githubusercontent.com/thelocalite/localite-ng/6a7447c1ea9043e615e3052fb564a24b9f70a88b/src/assets/images/product/ketchup.jpg', '90', 'Delmonte Ketchup');
+INSERT INTO `localite`.`product` ( `brand`, `category`, `description`, `image_url`, `mrp`, `name`) VALUES ( 'Kissan', 'Food', 'Orange Marmalade 200gm', 'https://raw.githubusercontent.com/thelocalite/localite-ng/6a7447c1ea9043e615e3052fb564a24b9f70a88b/src/assets/images/product/marmalade.jpg', '40', 'Kissan Orange Marmalade');
+INSERT INTO `localite`.`product` ( `brand`, `category`, `description`, `image_url`, `mrp`, `name`) VALUES ( 'Veeba', 'Food', 'Mayonnaise 300gm', 'https://raw.githubusercontent.com/thelocalite/localite-ng/6a7447c1ea9043e615e3052fb564a24b9f70a88b/src/assets/images/product/mayo.jpg', '60', 'Veeba Mayonnaise');
+
 
 -- Product_Vendor
 
@@ -69,6 +80,27 @@ INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_spec
 INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('5', '8', 38);
 INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('4', '9', 39);
 INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('5', '10', 40);
+
+INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('1', '11', 21);
+INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('1', '12', 22);
+INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('1', '13', 23);
+INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('1', '14', 24);
+INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('2', '15', 25);
+INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('2', '16', 26);
+INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('2', '17', 27);
+INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('3', '18', 28);
+INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('3', '19', 29);
+INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('3', '20', 30);
+INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('4', '11', 31);
+INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('5', '12', 32);
+INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('4', '13', 33);
+INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('5', '14', 34);
+INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('4', '15', 35);
+INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('5', '16', 36);
+INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('4', '17', 37);
+INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('5', '18', 38);
+INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('4', '19', 39);
+INSERT INTO `localite`.`product_vendor` (`vendor_id`, `product_id`, `vendor_specific_price`) VALUES ('5', '20', 40);
 
 
 -- Service
