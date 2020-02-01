@@ -16,8 +16,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import core.payload.ResponseMessage;
 import core.security.data.AuthRepository;
 import core.security.models.Auth;
-import lombok.Data;
-import lombok.Getter;
 
 /**
  * UserAPI
@@ -32,7 +30,7 @@ public class UserAPI {
 
 
     @GetMapping(value="/profile")
-    public Optional<Auth>  getMethodName() {
+    public Optional<Auth>  getProfile() {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         String name = authentication.getName();
         System.out.println(name);
@@ -58,4 +56,25 @@ public class UserAPI {
         }
     }
     
+
+    @PostMapping(value="/update-profile")
+    public ResponseMessage updateProfile(@RequestBody Map<String, String> body){
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        String name = authentication.getName();
+        System.out.println(name);
+
+        Auth user = authRepository.findByUsername(name).orElse(null);
+
+
+        if(user != null){
+            user.setName(body.get("name"));
+            user.setContactNumber(body.get("userContact"));
+            authRepository.save(user);
+            return new ResponseMessage("updated profile successfully");
+        }else{
+            return new ResponseMessage("failed to update profile");
+        }
+
+
+    }
 }

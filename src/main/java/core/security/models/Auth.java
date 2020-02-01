@@ -4,20 +4,29 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.OneToOne;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import org.hibernate.annotations.NaturalId;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
+import core.model.products.Vendor;
+import core.model.services.Technician;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -56,6 +65,16 @@ public class Auth implements UserDetails {
 
     @Enumerated(EnumType.STRING)
     private Role role;
+
+
+    // // Foreign Keys
+    // @JsonIgnore
+    // @OneToOne(fetch = FetchType.EAGER, mappedBy = "auth", cascade = CascadeType.ALL)
+    // private Vendor vendor;
+
+    // @JsonIgnore
+    // @OneToOne(fetch = FetchType.EAGER, mappedBy = "auth", cascade = CascadeType.ALL)
+    // private Technician technician;
 
     // Reset Token Related
     private String reset_password_token;

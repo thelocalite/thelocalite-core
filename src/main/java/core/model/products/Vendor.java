@@ -6,6 +6,7 @@ import javax.persistence.*;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
+import core.security.models.Auth;
 import lombok.*;
 
 @Getter
@@ -27,6 +28,10 @@ public class Vendor {
     @JsonIgnore
     @OneToMany(mappedBy = "vendor")
     private Set<ProductVendor> productVendors;
+
+    // @JsonIgnore
+    // @OneToOne(mappedBy = "vendor")
+    // private Auth auth;
 
     // Args Constructor
 
