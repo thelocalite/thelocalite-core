@@ -67,14 +67,16 @@ public class Auth implements UserDetails {
     private Role role;
 
 
-    // // Foreign Keys
-    // @JsonIgnore
-    // @OneToOne(fetch = FetchType.EAGER, mappedBy = "auth", cascade = CascadeType.ALL)
-    // private Vendor vendor;
+    // Foreign Keys
+    @JsonIgnore
+    @OneToOne(cascade=CascadeType.ALL)
+	@JoinColumn(name="vendor_id")
+    private Vendor vendor;
 
-    // @JsonIgnore
-    // @OneToOne(fetch = FetchType.EAGER, mappedBy = "auth", cascade = CascadeType.ALL)
-    // private Technician technician;
+    @JsonIgnore
+    @OneToOne(cascade=CascadeType.ALL)
+	@JoinColumn(name="technician_id")
+    private Technician technician;
 
     // Reset Token Related
     private String reset_password_token;

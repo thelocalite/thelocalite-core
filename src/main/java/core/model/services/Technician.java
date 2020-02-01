@@ -34,9 +34,9 @@ public class Technician{
     @JoinColumn(name="service_id")
     private Service service;
 
-    // @JsonIgnore
-    // @OneToOne(mappedBy = "technician")
-    // private Auth auth;
+    @JsonIgnore
+	@OneToOne(mappedBy="technician", cascade=CascadeType.ALL)
+    private Auth auth;
 
     public Technician(String firstName, String lastName, String address, int contact) {
         this.firstName = firstName;

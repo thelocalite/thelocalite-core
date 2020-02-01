@@ -29,9 +29,9 @@ public class Vendor {
     @OneToMany(mappedBy = "vendor")
     private Set<ProductVendor> productVendors;
 
-    // @JsonIgnore
-    // @OneToOne(mappedBy = "vendor")
-    // private Auth auth;
+    @JsonIgnore
+	@OneToOne(mappedBy="vendor", cascade=CascadeType.ALL)
+    private Auth auth;
 
     // Args Constructor
 
