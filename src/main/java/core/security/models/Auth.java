@@ -27,6 +27,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 import core.model.products.Vendor;
 import core.model.services.Technician;
+import core.model.users.Customer;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -77,6 +78,11 @@ public class Auth implements UserDetails {
     @OneToOne(cascade=CascadeType.ALL)
 	@JoinColumn(name="technician_id")
     private Technician technician;
+
+    @JsonIgnore
+    @OneToOne(cascade=CascadeType.ALL)
+	@JoinColumn(name="customer_id")
+    private Customer customer;
 
     // Reset Token Related
     private String reset_password_token;

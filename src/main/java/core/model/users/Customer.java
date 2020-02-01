@@ -9,8 +9,12 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+import core.security.models.Auth;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -38,6 +42,10 @@ public class Customer {
 
     @OneToMany(mappedBy = "customer", cascade = CascadeType.ALL)
     private Set<CustomerOrder> customerOrder; 
+
+    @JsonIgnore
+	@OneToOne(mappedBy="customer", cascade=CascadeType.ALL)
+    private Auth auth;
 
     public Customer(String name, String email) {
         this.name = name;
