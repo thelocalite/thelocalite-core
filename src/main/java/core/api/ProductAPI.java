@@ -1,6 +1,7 @@
 package core.api;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.*;
@@ -23,6 +24,7 @@ public class ProductAPI {
 
     // Gets all Products
     @GetMapping("")
+    @Cacheable("products")
     List<Product> getAllProducts() {
         return productVendorService.getAllProducts();
     }

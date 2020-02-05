@@ -6,6 +6,7 @@ package core;
 // import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cache.annotation.EnableCaching;
 
 // import core.model.products.Product;
 // import core.model.products.ProductVendor;
@@ -14,6 +15,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 // import core.repository.products.VendorRepository;
 
 @SpringBootApplication
+@EnableCaching
 // public class LocaliteApplication implements CommandLineRunner {
 public class LocaliteApplication {
 
